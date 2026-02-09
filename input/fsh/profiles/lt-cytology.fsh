@@ -90,7 +90,7 @@ Title: "Observation: Cervix - Cytology Conclusion Example"
 * status = #final
 * category = $observation-category#exam
 * code = $sct#416107004 "Cervical cytology test (procedure)"
-* subject = Reference(example-patient)
+* subject = Reference(example-patient-female)
 * valueCodeableConcept = $sct#62051000119105 "Low-grade squamous intraepithelial lesion on cervical Papanicolaou smear (finding)"
 * effectiveDateTime = "2025-01-12"
 * performer = Reference(example-organization)
