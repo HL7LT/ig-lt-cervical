@@ -43,18 +43,13 @@ Id: hpv-test-result-cervix-lt
 Title: "HPV Test Result (LT Cervix ADP)"
 Description: "HPV DNA test result with optional component for specifying detected high-risk genotypes. Used in the Lithuanian cervical cancer prevention program."
 * ^publisher = "HL7 Lithuania"
-// Core
 * status 1..1
 * status = #final (exactly)
 * category 1..1
 * category = $observation-category#laboratory
-// Test Code (Primary High-Risk HPV testing)
 * code 1..1
 * code = $sct#35904009 "Human papillomavirus deoxyribonucleic acid detection (procedure)"
-// Subject
 * subject 1..1
-// * subject only Reference(LTBasePatient)
-// Main Result (Qualitative: Positive/Negative/Unsatisfactory)
 * value[x] 1..1
 * value[x] only CodeableConcept
 * valueCodeableConcept from HpvTestResultCervixLtVS (required)
