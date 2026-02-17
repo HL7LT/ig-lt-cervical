@@ -2,7 +2,7 @@
 ValueSet: HpvGenotypeCervixLtVS
 Id: hpv-genotype-cervix-lt
 Title: "ValueSet: Cervix - HPV Genotypes (LT ADP)"
-Description: "High-risk Human Papillomavirus (HPV) genotypes and groups detected in cervical cancer screening, based on the Lithuanian ADP methodology."
+Description: "High-risk Human Papillomavirus (HPV) genotypes and groups detected in cervical cancer screening."
 * ^status = #active
 * ^publisher = "HL7 Lithuania"
 
@@ -25,7 +25,7 @@ Description: "High-risk Human Papillomavirus (HPV) genotypes and groups detected
 ValueSet: HpvTestResultCervixLtVS
 Id: hpv-test-result-cervix-lt
 Title: "ValueSet: Cervix - HPV Test Result (LT ADP)"
-Description: "Overall result codes for HPV DNA testing (detected, not detected, or invalid) in the Lithuanian ADP."
+Description: "Overall result codes for HPV DNA testing."
 * ^status = #active
 * ^publisher = "HL7 Lithuania"
 // --- Negative
@@ -41,7 +41,7 @@ Profile: HpvTestResultCervixLt
 Parent: LTBaseObservation
 Id: hpv-test-result-cervix-lt
 Title: "HPV Test Result (LT Cervix ADP)"
-Description: "HPV DNA test result with optional component for specifying detected high-risk genotypes. Used in the Lithuanian cervical cancer prevention program."
+Description: "HPV DNA test result with optional component for specifying detected high-risk genotypes."
 * ^publisher = "HL7 Lithuania"
 * status 1..1
 * status = #final (exactly)
