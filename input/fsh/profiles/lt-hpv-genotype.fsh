@@ -8,6 +8,7 @@ Description: "High-risk Human Papillomavirus (HPV) genotypes and groups detected
 
 * $sct#115326008 "Human papillomavirus, type 16 (organism)"
 * $sct#115327004 "Human papillomavirus, type 18 (organism)"
+
 * $sct#1269503003 "Human papillomavirus type 31 (organism)"
 * $sct#1269504009 "Human papillomavirus type 33 (organism)"
 * $sct#1269505005 "Human papillomavirus type 35 (organism)"
@@ -20,6 +21,7 @@ Description: "High-risk Human Papillomavirus (HPV) genotypes and groups detected
 * $sct#1269512001 "Human papillomavirus type 59 (organism)"
 * $sct#1269513006 "Human papillomavirus type 66 (organism)"
 * $sct#1269514000 "Human papillomavirus type 68 (organism)"
+
 * $sct#9482002   "Human papillomavirus (organism)"
 
 ValueSet: HpvTestResultCervixLtVS

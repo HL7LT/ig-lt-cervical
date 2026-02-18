@@ -52,12 +52,12 @@ Description: "A panel of pre-analytic clinical observations."
 
 // 4. Pregnancy
 * component contains pregnancy 0..1
-* component[pregnancy].code = $sct#77386006 "Pregnancy (finding)"
-* component[pregnancy].value[x] only boolean
+* component[pregnancy].code = $sct#289908002 "Pregnancy, function (observable entity)"
+* component[pregnancy].value[x] only http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips
 
 // 5. Lactation
 * component contains lactation 0..1
-* component[lactation].code = $sct#225604004 "Lactation established (finding)"
+* component[lactation].code = $sct#364381005 "Lactation observable (observable entity)"
 * component[lactation].value[x] only boolean
 
 // 6. Radiotherapy (Pelvic)
