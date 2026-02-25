@@ -1,3 +1,12 @@
+CodeSystem: LtCervixScoreCs
+Id: lt-cervix-score-cs
+Title: "LT Cervix Scoring Instruments"
+Description: "Local codes for cervical cancer screening scoring instruments (0-10)."
+* ^status = #active
+* ^publisher = "HL7 Lithuania"
+
+
+* #swede-score "Swede score"
 ValueSet: ColposcopyAdequacyLtVS
 Id: colposcopy-adequacy-lt
 Title: "ValueSet: Colposcopy Adequacy"
@@ -44,7 +53,7 @@ Description: "Anatomical localization of cervical biopsy sampling sites during c
 
 
 Profile: ColposcopyProcedureLt
-Parent: $EuProcedureUrl
+Parent: LTBaseProcedure
 Id: colposcopy-procedure-lt
 Title: "Procedure: Colposcopy (LT Cervix ADP)"
 Description: "Colposcopy procedure performed as part of the Lithuanian cervical cancer screening and diagnostic pathway (ADP)."
@@ -68,7 +77,7 @@ Description: "Colposcopy procedure performed as part of the Lithuanian cervical 
 Profile: ColposcopyFindingLt
 Parent: LTBaseObservation
 Id: colposcopy-finding-lt
-Title: "Observation: Colposcopy Findings (LT Cervix ADP)"
+Title: "Observation: Colposcopy Findings"
 Description: "Clinical findings recorded during colposcopy, including suitability for assessment and Swede score."
 * ^publisher = "HL7 Lithuania"
 // Core
@@ -88,10 +97,11 @@ Description: "Clinical findings recorded during colposcopy, including suitabilit
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains swedeScore 0..1
-* component[swedeScore].code = $sct#227266005 "Swede (substance)" // We need a SNOMED code for SWEDE SCORE - I don't think this is correct rn
+* component[swedeScore].code = LtCervixScoreCs#swede-score "Swede score" // We need a SNOMED code for SWEDE SCORE - rn I created local code..
+// * component[swedeScore].code = $sct#278061009 "Scores (qualifier value)" ---> or just use snomed "Score" ? 
 * component[swedeScore].value[x] only integer
 * component contains swedeRisk 0..1
-* component[swedeRisk].code = $sct#363702006 "Risk assessment (observable entity)"
+* component[swedeRisk].code = $sct#407647007 "Risk assessment status (finding)" // or should here be 225338004 | Risk assessment (procedure) |
 * component[swedeRisk].value[x] only CodeableConcept
 * component[swedeRisk].valueCodeableConcept from ColposcopySwedeRiskLtVS (extensible)
 // Narrative
@@ -100,7 +110,7 @@ Description: "Clinical findings recorded during colposcopy, including suitabilit
 
 
 Profile: ColposcopyBiopsyProcedureLt
-Parent: $EuProcedureUrl
+Parent: LTBaseProcedure
 Id: colposcopy-biopsy-procedure-lt
 Title: "Procedure: Cervical Biopsy during Colposcopy (LT ADP)"
 Description: "Biopsy or excisional procedures performed during colposcopy as part of the Lithuanian cervical cancer screening pathway."
@@ -126,7 +136,7 @@ Description: "Indicates whether the patient has a history of colposcopy examinat
 * status 1..1
 * status = #final (exactly)
 * category 1..1
-* category = $observation-category#survey // or should this be #social-history
+* category = $observation-category#survey 
 * code 1..1
 * code = $sct#392003006 "Colposcopy (procedure)"
 * subject 1..1
