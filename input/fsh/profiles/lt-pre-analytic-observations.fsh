@@ -74,12 +74,12 @@ Description: "A panel of pre-analytic clinical observations."
 
 // 8. Intrauterine Device (IUD)
 * component contains iud 0..1
-* component[iud].code = $sct#312081001 "Uses intrauterine device contraception (finding)"
+* component[iud].code = $sct#312081001 "Uses intrauterine device contraception (finding)" //161773007 |History of intrauterine contraceptive device usage (situation)|
 * component[iud].value[x] only boolean
 
 // 9. IUD with Progestogens
 * component contains iudHormonal 0..1
-* component[iudHormonal].code = $sct#449038007 "Uses hormone releasing intrauterine device contraception (finding)"
+* component[iudHormonal].code = $sct#449038007 "Uses hormone releasing intrauterine device contraception (finding)" //473099003 |History of use of hormone releasing intrauterine device contraception (situation)|
 * component[iudHormonal].value[x] only boolean
 
 // 10. Condition after Conization
@@ -98,3 +98,38 @@ Description: "A panel of pre-analytic clinical observations."
 * component[hpvVaccination].code = $sct#99501000119107 "Human papilloma virus vaccination given (situation)"
 * component[hpvVaccination].value[x] only CodeableConcept
 * component[hpvVaccination].valueCodeableConcept from HpvVaccinationStatusLtVS (required)
+
+Instance: observation-history-routine-example
+InstanceOf: CervicalScreeningClinicalHistoryLt
+Usage: #example
+Title: "Observation: Clinical History - Routine"
+Description: "A standard history for a young patient with no prior treatments."
+* status = #final
+* category = $observation-category#exam
+* code = $sct#270427003 "Patient-initiated encounter (procedure)"
+* subject = Reference(Patient/example-patient-female)
+* effectiveDateTime = "2026-02-27"
+
+// 1. Cycle Day (Using Integer option)
+* component[cycleDay].code = $sct#161713000 "Last menstrual period - First day (observable entity)"
+* component[cycleDay].valueInteger = 12
+
+// 4. Pregnancy (Not pregnant)
+* component[pregnancy].code = $sct#289908002 "Pregnancy, function (observable entity)"
+* component[pregnancy].valueCodeableConcept = $sct#60001007 "Not pregnant (finding)"
+
+// 5. Lactation: No
+* component[lactation].code = $sct#364381005 "Lactation observable (observable entity)"
+* component[lactation].valueBoolean = false
+
+// 8. IUD: No
+* component[iud].code = $sct#312081001 "Uses intrauterine device contraception (finding)"
+* component[iud].valueBoolean = false
+
+// 11. Sample Location: Exocervix
+* component[sampleLocation].code = $sct#2620001000004108 "Specimen collection procedure (observable entity)"
+* component[sampleLocation].valueCodeableConcept = $sct#28349006 "Exocervical structure (body structure)"
+
+// 12. HPV Vaccination: Up to date
+* component[hpvVaccination].code = $sct#99501000119107 "Human papilloma virus vaccination given (situation)"
+* component[hpvVaccination].valueCodeableConcept = $sct#171258008 "Up-to-date with immunizations (finding)"
