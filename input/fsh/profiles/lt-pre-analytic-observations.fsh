@@ -52,7 +52,9 @@ Description: "A panel of pre-analytic clinical observations."
 
 // 4. Pregnancy
 * component contains pregnancy 0..1
-* component[pregnancy].code = $sct#289908002 "Pregnancy, function (observable entity)"
+* component[pregnancy].code = $sct#364320009 "Pregnancy observable (observable entity)"
+// add loinc code
+// remove booleans
 * component[pregnancy].value[x] only http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips
 
 // 5. Lactation
@@ -63,23 +65,26 @@ Description: "A panel of pre-analytic clinical observations."
 // 6. Radiotherapy (Pelvic)
 * component contains radiotherapy 0..1
 * component[radiotherapy].code = $sct#429479009 "History of radiation therapy (situation)"
-* component[radiotherapy].value[x] only boolean or Quantity
+* component[radiotherapy].value[x] only Quantity
 * component[radiotherapy].valueQuantity from http://hl7.org/fhir/ValueSet/age-units
 
 // 7. Chemotherapy
 * component contains chemotherapy 0..1
 * component[chemotherapy].code = $sct#161653008 "History of chemotherapy (situation)"
-* component[chemotherapy].value[x] only boolean or Quantity
+* component[chemotherapy].value[x] only Quantity
 * component[chemotherapy].valueQuantity from http://hl7.org/fhir/ValueSet/age-units
+//add an instance with a comparator, history of more than 1y
+
+
 
 // 8. Intrauterine Device (IUD)
 * component contains iud 0..1
-* component[iud].code = $sct#312081001 "Uses intrauterine device contraception (finding)" //161773007 |History of intrauterine contraceptive device usage (situation)|
+* component[iud].code = $sct#161773007 "History of intrauterine contraceptive device usage (situation)"
 * component[iud].value[x] only boolean
 
 // 9. IUD with Progestogens
 * component contains iudHormonal 0..1
-* component[iudHormonal].code = $sct#449038007 "Uses hormone releasing intrauterine device contraception (finding)" //473099003 |History of use of hormone releasing intrauterine device contraception (situation)|
+* component[iudHormonal].code = $sct#473099003 "History of use of hormone releasing intrauterine device contraception (situation)" //473099003 |History of use of hormone releasing intrauterine device contraception (situation)|
 * component[iudHormonal].value[x] only boolean
 
 // 10. Condition after Conization
