@@ -42,9 +42,6 @@ Description: "Overall result codes for HPV DNA testing."
 * $sct#125154007 "Specimen unsatisfactory for evaluation (finding)"
 * $sct#373880007 "Specimen rejected / not processed (finding)"
 
-
-
-
 ValueSet: AdpHpvRiskGroupLtVS
 Id: adp-hpv-risk-group-lt
 Title: "ValueSet: HPV Risk Groups (LT ADP)"
@@ -60,14 +57,10 @@ Description: "Specific HPV risk groupings"
 * ^status = #active
 * ^publisher = "HL7 Lithuania"
 * ^caseSensitive = true
-* #group-highest "Highest risk genotype group (16, 18)"
-* #group-medium  "Medium-risk genotype group (31, 33, 35, 45, 52, 58)"
-* #group-lower   "Lower risk genotype group (39, 51, 56, 59, 68)"
-* #group-low     "Low-risk HPV genotype group (53, 66, others)"
-
-
-
-
+* #highest "Highest risk genotype group (16, 18)"
+* #medium  "Medium-risk genotype group (31, 33, 35, 45, 52, 58)"
+* #lower   "Lower risk genotype group (39, 51, 56, 59, 68)"
+* #low     "Low-risk HPV genotype group (53, 66, others)"
 
 Profile: HpvTestResultCervixLt
 Parent: LTBaseObservation
@@ -138,7 +131,7 @@ Title: "Observation: Cervix - HPV Positive (Medium Risk Group)"
 * valueCodeableConcept = $sct#720005005 "Human papillomavirus deoxyribonucleic acid detected, high risk on cervical specimen (finding)"
 // Component: Medium Risk Group
 * component[detectedRiskGroup].code = $sct#243584004 "Genus Papillomavirus (organism)"
-* component[detectedRiskGroup].valueCodeableConcept = AdpHpvRiskGroupLtCS#group-medium "Medium-risk genotype group (31, 33, 35, 45, 52, 58)"
+* component[detectedRiskGroup].valueCodeableConcept = AdpHpvRiskGroupLtCS#medium "Medium-risk genotype group (31, 33, 35, 45, 52, 58)"
 * performer = Reference(example-organization)
 
 
@@ -159,6 +152,6 @@ Description: "A scenario where the patient is coinfected. The lab identified HPV
 * component[detectedGenotype][0].valueCodeableConcept = $sct#115326008 "Human papillomavirus, type 16 (organism)"
 // Finding: Medium Risk Group (31, 33, 35...)
 * component[detectedRiskGroup][0].code = $sct#243584004 "Genus Papillomavirus (organism)"
-* component[detectedRiskGroup][0].valueCodeableConcept = AdpHpvRiskGroupLtCS#group-medium "Medium-risk genotype group (31, 33, 35, 45, 52, 58)"
+* component[detectedRiskGroup][0].valueCodeableConcept = AdpHpvRiskGroupLtCS#medium "Medium-risk genotype group (31, 33, 35, 45, 52, 58)"
 * performer = Reference(example-organization)
 
