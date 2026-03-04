@@ -53,7 +53,8 @@ Description: "Anatomical localization of cervical biopsy sampling sites during c
 
 
 Profile: ColposcopyProcedureLt
-Parent: LTBaseProcedure
+// Parent: $EuProcedureUrl
+Parent: Procedure
 Id: colposcopy-procedure-lt
 Title: "Procedure: Colposcopy (LT Cervix ADP)"
 Description: "Colposcopy procedure performed as part of the Lithuanian cervical cancer screening and diagnostic pathway (ADP)."
@@ -110,7 +111,8 @@ Description: "Clinical findings recorded during colposcopy, including suitabilit
 
 
 Profile: ColposcopyBiopsyProcedureLt
-Parent: LTBaseProcedure
+// Parent: $EuProcedureUrl // kuna imaging-r5 dependecit ei saa panna, siis ka see rida annab errori
+Parent: Procedure
 Id: colposcopy-biopsy-procedure-lt
 Title: "Procedure: Cervical Biopsy during Colposcopy (LT ADP)"
 Description: "Biopsy or excisional procedures performed during colposcopy as part of the Lithuanian cervical cancer screening pathway."
@@ -162,7 +164,22 @@ Usage: #example
 Title: "Observation: History of Colposcopy Example"
 * status = #final
 * category = $observation-category#survey
-* code = $sct#392003006 "Colposcopy (procedure)"
+* code = $sct#392003006 "Colposcopy (procedure)" // or 176786003 | Colposcopy of cervix (procedure) |
 * subject = Reference(example-patient-female)
 * valueCodeableConcept = $sct#392521001 "History of (contextual qualifier)"
 * derivedFrom = Reference(example-colposcopy-procedure)
+
+
+Instance: observation-colposcopy-finding-example
+InstanceOf: ColposcopyFindingLt
+Usage: #example
+Title: "Observation: Colposcopy Finding Example"
+* status = #final
+* category = $observation-category#exam
+* code = $sct#392003006 "Colposcopy (procedure)"
+* subject = Reference(example-patient-female)
+* valueCodeableConcept = $sct#443938003 "Procedure carried out on subject (situation)"
+* component[swedeScore].valueInteger = 3
+* component[swedeRisk].code = $sct#407647007 "Risk assessment status (finding)"
+* component[swedeRisk].valueCodeableConcept = $sct#723505004 "Low risk (qualifier value)"
+* note.text = "Transformation zone fully visible. Acetowhite changes limited."
