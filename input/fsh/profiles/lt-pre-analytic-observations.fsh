@@ -4,6 +4,7 @@ Id: hpv-vaccination-status-lt
 Title: "ValueSet: HPV Vaccination Status"
 Description: "Status of HPV vaccination."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Lithuania"
 * $sct#171258008 "Up-to-date with immunizations (finding)"
 * $sct#171259000 "Not up to date with immunizations (finding)"
@@ -14,6 +15,7 @@ Id: cervical-sample-collection-site-lt
 Title: "ValueSet: Cervical Sample Collection Site (LT ADP)"
 Description: "Anatomical locations for sample collection."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Lithuania"
 * $sct#36973007 "Endocervical structure (body structure)"
 * $sct#28349006 "Exocervical structure (body structure)"
@@ -25,6 +27,7 @@ Id: yes-no-unknown-lt-vs
 Title: "ValueSet: Yes / No / Unknown (SNOMED CT)"
 Description: "Codes used to represent clinical presence or absence."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Lithuania"
 * $sct#373066001 "Yes (qualifier value)"
 * $sct#373067005 "No (qualifier value)"

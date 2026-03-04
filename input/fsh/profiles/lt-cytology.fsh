@@ -3,6 +3,7 @@ Id: cytology-conclusion-cervix-lt
 Title: "ValueSet: Cervix - Cytology Conclusion (LT ADP)"
 Description: "Cytological diagnostic conclusions and specimen adequacy categories used in the Lithuanian cervical cancer screening and diagnostic pathway (ADP), aligned with Bethesda terminology."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Lithuania"
 // --- Specimen adequacy
 * $sct#125152006 "Specimen satisfactory for evaluation (finding)"
@@ -38,6 +39,7 @@ Id: cytology-preparation-method-cervix-lt
 Title: "ValueSet: Cervix - Cytology Preparation Method (LT ADP)"
 Description: "Specimen preparation methods for cervical cytology in the Lithuanian cervical cancer screening pathway (conventional smear vs liquid-based cytology)."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Lithuania"
 // Conventional smear
 * $sct#440623000 "Microscopic examination of cervical Papanicolaou smear (procedure)"

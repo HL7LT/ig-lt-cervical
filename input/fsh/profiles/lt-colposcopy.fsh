@@ -12,6 +12,7 @@ Id: colposcopy-adequacy-lt
 Title: "ValueSet: Colposcopy Adequacy"
 Description: "Suitability of colposcopy examination for clinical assessment in the Lithuanian cervical cancer screening pathway."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Lithuania"
 * $sct#443938003 "Procedure carried out on subject (situation)"    // Suitable for assessment
 * $sct#416237000 "Procedure not done (situation)"  // Not suitable 
@@ -22,6 +23,7 @@ Id: colposcopy-swede-risk-lt
 Title: "ValueSet: Colposcopy Swede Score Risk Category"
 Description: "Risk categories derived from Swede score during colposcopy examination."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Lithuania"
 * $sct#723505004 "Low risk (qualifier value)"  // Swede 0–3
 * $sct#723509005 "High risk (qualifier value)"  // Swede 4–10
@@ -32,6 +34,7 @@ Id: colposcopy-procedure-type-lt
 Title: "ValueSet: Colposcopy-related Procedures"
 Description: "Procedures that may be performed during colposcopy in the Lithuanian cervical cancer screening pathway."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Lithuania"
 * $sct#51675008  "Punch biopsy of cervix (procedure)"
 * $sct#23140002  "Loop electrosurgical excision procedure of cervix (procedure)"
@@ -44,6 +47,7 @@ Id: cervical-biopsy-site-lt
 Title: "ValueSet: Cervical Biopsy Site"
 Description: "Anatomical localization of cervical biopsy sampling sites during colposcopy."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Lithuania"
 * $sct#127900007 "Structure of left superior quadrant of uterine cervix (body structure)"
 * $sct#127902004 "Structure of right superior quadrant of uterine cervix (body structure)"

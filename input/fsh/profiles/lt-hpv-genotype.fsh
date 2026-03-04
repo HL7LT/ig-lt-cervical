@@ -4,6 +4,7 @@ Id: hpv-genotype-cervix-lt
 Title: "ValueSet: Cervix - HPV Genotypes (LT ADP)"
 Description: "High-risk Human Papillomavirus (HPV) genotypes and groups detected in cervical cancer screening."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Lithuania"
 
 * $sct#115326008 "Human papillomavirus, type 16 (organism)"
@@ -24,15 +25,12 @@ Description: "High-risk Human Papillomavirus (HPV) genotypes and groups detected
 
 * $sct#9482002   "Human papillomavirus (organism)"
 
-
-
-
-
 ValueSet: HpvTestResultCervixLtVS
 Id: hpv-test-result-cervix-lt
 Title: "ValueSet: Cervix - HPV Test Result (LT ADP)"
 Description: "Overall result codes for HPV DNA testing."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Lithuania"
 // --- Negative
 * $sct#77851000146104 "High risk human papillomavirus deoxyribonucleic acid not detected (finding)"
@@ -47,6 +45,7 @@ Id: adp-hpv-risk-group-lt
 Title: "ValueSet: HPV Risk Groups (LT ADP)"
 Description: "ValueSet containing the ADP-specific risk buckets."
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Lithuania"
 * include codes from system AdpHpvRiskGroupLtCS
 
