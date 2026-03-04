@@ -66,11 +66,11 @@ Description: "Colposcopy procedure performed as part of the Lithuanian cervical 
 * subject 1..1
 * subject only Reference(LTBasePatient)
 // Timing
-* performed[x] 1..1
+* occurrence[x] 1..1
 // Performer
 * performer 1..*
 // Reason (HPV+, abnormal cytology, etc.)
-* reasonReference 0..*
+* reason 0..*
 // Notes
 * note 0..*
 
@@ -121,7 +121,7 @@ Description: "Biopsy or excisional procedures performed during colposcopy as par
 * code 1..1
 * code from ColposcopyProcedureTypeLtVS (required)
 * subject 1..1
-* performed[x] 1..1
+* occurrence[x] 1..1
 // Anatomical site
 * bodySite 1..*
 * bodySite from CervicalBiopsySiteLtVS (required)
@@ -154,8 +154,8 @@ Title: "Procedure: Colposcopy Example"
 * status = #completed
 * code = $sct#392003006 "Colposcopy (procedure)"
 * subject = Reference(example-patient-female)
-* performedDateTime = "2025-02-10"
-* performer = Reference(example-practitioner)
+* occurrenceDateTime = "2025-02-10"
+* performer.actor = Reference(example-practitioner)
 
 
 Instance: example-colposcopy-history
@@ -167,7 +167,7 @@ Title: "Observation: History of Colposcopy Example"
 * code = $sct#392003006 "Colposcopy (procedure)" // or 176786003 | Colposcopy of cervix (procedure) |
 * subject = Reference(example-patient-female)
 * valueCodeableConcept = $sct#392521001 "History of (contextual qualifier)"
-* derivedFrom = Reference(example-colposcopy-procedure)
+* partOf = Reference(example-colposcopy-procedure)
 
 
 Instance: observation-colposcopy-finding-example
