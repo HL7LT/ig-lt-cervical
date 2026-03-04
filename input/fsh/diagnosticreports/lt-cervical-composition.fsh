@@ -32,10 +32,12 @@ Description: "Clinical summary document linking diagnostic reports produced duri
 * section[colposcopy].code = $sct#392003006 "Colposcopy (procedure)"
 * section[colposcopy].entry only Reference(ColposcopyDiagnosticReportCervixLt)
 // Histology will be added later
+// * section[histology].title = "Histology"
+// * section[histology].text.status = #generated
+// * section[histology].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Histology diagnostic report will be added in a future version of the implementation guide.</div>"
+* section[histology] ^short = "Histology diagnostic report will be added in a future version of the implementation guide."
 * section[histology].title = "Histology"
-* section[histology].text.status = #generated
-* section[histology].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Histology diagnostic report will be added in a future version of the implementation guide.</div>"
-
+* section[histology].code = $sct#714797009 "Histologic test (procedure)"
 
 Instance: composition-cervical-diagnostic-summary-example
 InstanceOf: CervicalDiagnosticSummaryLt
