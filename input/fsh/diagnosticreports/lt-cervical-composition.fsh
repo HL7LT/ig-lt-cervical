@@ -6,7 +6,7 @@ Description: "Clinical summary document linking diagnostic reports produced duri
 * ^publisher = "HL7 Lithuania"
 * status 1..1
 * type 1..1
-* type = $sct#721981007 "Diagnostic report (record artifact)"
+* type = $sct#721981007 "Diagnostic studies report (record artifact)"
 * subject 1..1
 * subject only Reference(LTBasePatient)
 * date 1..1
@@ -42,7 +42,7 @@ InstanceOf: CervicalDiagnosticSummaryLt
 Usage: #example
 Title: "Composition: Cervical Cancer Screening Diagnostic Summary"
 * status = #final
-* type = $sct#721981007 "Diagnostic report (record artifact)"
+* type = $sct#721981007 "Diagnostic studies report (record artifact)"
 * title = "Cervical Cancer Screening Diagnostic Summary"
 * date = "2025-02-10T12:00:00+02:00"
 * subject = Reference(example-patient-female)

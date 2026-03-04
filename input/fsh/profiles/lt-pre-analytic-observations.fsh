@@ -54,7 +54,7 @@ Description: "A panel of pre-analytic clinical observations."
 
 // 2. Menopause
 * component contains menopause 0..1
-* component[menopause].code = $sct#276477006 "Menopause present (finding)"
+* component[menopause].code = $sct#276477006 "Menopause observation"
 * component[menopause].value[x] only Quantity
 * component[menopause].valueQuantity from http://hl7.org/fhir/ValueSet/age-units
 
@@ -172,7 +172,7 @@ Description: "A clinical history illustrating the usage of >1 year comparator fo
 * effectiveDateTime = "2026-02-27"
 
 // 2. Menopause
-//* component[menopause].code = $sct#276477006 "Menopause present (finding)"
+//* component[menopause].code = $sct#276477006 "Menopause observation"
 * component[menopause].valueQuantity = 52 'a' "years"
 // 3. Hormone Therapy: No
 //* component[hormoneTherapy].code = $sct#134651000119108 "History of estrogen therapy (situation)"

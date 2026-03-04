@@ -54,6 +54,7 @@ Id: adp-hpv-risk-group-lt
 Title: "CodeSystem: HPV Risk Groups (LT ADP)"
 Description: "Specific HPV risk groupings"
 * ^status = #active
+* ^experimental = false
 * ^publisher = "HL7 Lithuania"
 * ^caseSensitive = true
 * #highest "Highest risk genotype group (16, 18)"

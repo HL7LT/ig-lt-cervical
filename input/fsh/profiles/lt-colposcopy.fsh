@@ -3,6 +3,8 @@ Id: lt-cervix-score-cs
 Title: "LT Cervix Scoring Instruments"
 Description: "Local codes for cervical cancer screening scoring instruments (0-10)."
 * ^status = #active
+* ^experimental = false
+* ^caseSensitive = false
 * ^publisher = "HL7 Lithuania"
 
 
@@ -39,7 +41,7 @@ Description: "Procedures that may be performed during colposcopy in the Lithuani
 * $sct#51675008  "Punch biopsy of cervix (procedure)"
 * $sct#23140002  "Loop electrosurgical excision procedure of cervix (procedure)"
 * $sct#54535009  "Cone biopsy of cervix (procedure)"
-* $sct#5288900   "Endocervical curettage (procedure)"
+* $sct#52889002   "Endocervical curettage (procedure)"
 
 
 ValueSet: CervicalBiopsySiteLtVS
