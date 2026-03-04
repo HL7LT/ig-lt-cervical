@@ -6,7 +6,7 @@ Description: "Clinical summary document linking diagnostic reports produced duri
 * ^publisher = "HL7 Lithuania"
 * status 1..1
 * type 1..1
-* type = $sct#721981007 "Diagnostic report (record artifact)"
+* type = $sct#721981007 "Diagnostic studies report (record artifact)"
 * subject 1..1
 * subject only Reference(LTBasePatient)
 * date 1..1
@@ -32,17 +32,19 @@ Description: "Clinical summary document linking diagnostic reports produced duri
 * section[colposcopy].code = $sct#392003006 "Colposcopy (procedure)"
 * section[colposcopy].entry only Reference(ColposcopyDiagnosticReportCervixLt)
 // Histology will be added later
+// * section[histology].title = "Histology"
+// * section[histology].text.status = #generated
+// * section[histology].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Histology diagnostic report will be added in a future version of the implementation guide.</div>"
+* section[histology] ^short = "Histology diagnostic report will be added in a future version of the implementation guide."
 * section[histology].title = "Histology"
-* section[histology].text.status = #generated
-* section[histology].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Histology diagnostic report will be added in a future version of the implementation guide.</div>"
-
+* section[histology].code = $sct#714797009 "Histologic test (procedure)"
 
 Instance: composition-cervical-diagnostic-summary-example
 InstanceOf: CervicalDiagnosticSummaryLt
 Usage: #example
 Title: "Composition: Cervical Cancer Screening Diagnostic Summary"
 * status = #final
-* type = $sct#721981007 "Diagnostic report (record artifact)"
+* type = $sct#721981007 "Diagnostic studies report (record artifact)"
 * title = "Cervical Cancer Screening Diagnostic Summary"
 * date = "2025-02-10T12:00:00+02:00"
 * subject = Reference(example-patient-female)

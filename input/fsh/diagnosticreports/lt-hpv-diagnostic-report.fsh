@@ -33,7 +33,7 @@ InstanceOf: $EuSpecimenUrl
 Usage: #example
 Title: "Specimen: Cervical Sample for HPV Testing"
 * status = #available
-* type = $sct#119361006 "Specimen from cervix (specimen)"
+* type = $sct#119361006 "Plasma specimen (specimen)"
 * subject = Reference(example-patient-female)
 * receivedTime = "2025-01-12T09:15:00+02:00"
 * collection.collectedDateTime = "2025-01-12T08:45:00+02:00"
