@@ -30,3 +30,4 @@ Resource has a language (ru), and the XHTML has a lang (en), but they differ
 # 
 the canonical URL (https://hl7.lt/fhir/base/StructureDefinition/AssociatedSituationExt) does not match the URL (http://hl7.org/fhir/us/vitals/StructureDefinition/AssociatedSituationExt). Use the special-url parameter if you really mean for it not to match
 >>>>>>> ff21a0420d5e5d888d61dc9750e7112255703245
+
