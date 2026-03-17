@@ -21,8 +21,10 @@ publisher:
   email: info@medicinosnk.lt
 
 dependencies:
+  lt.hl7.fhir.base: 0.3.0
+  lt.hl7.fhir.eu: 0.0.2
   hl7.fhir.eu.base-r5: 0.1.0
-  lt.hl7.fhir.base: 0.2.0
+
 
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
