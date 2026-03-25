@@ -24,6 +24,35 @@ Description: "Final cytological diagnostic conclusion of cervical cytology exami
 * performer 1..*
 * method 0..1
 * method from CytologyPreparationMethodLtCervicalVS (extensible)
+// Components from ADP dataset
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component ^slicing.ordered = false
+* component contains
+    pathogenFindings 0..* MS and
+    microfloraType 0..* MS and
+    immunocytochemistry 0..1 MS and
+    specimenSuitability 0..1 MS
+
+* component[pathogenFindings].code = $sct#264395009 "Microorganism (organism)"
+* component[pathogenFindings].value[x] only CodeableConcept
+* component[pathogenFindings].valueCodeableConcept from CervicalPathogenVS (extensible)
+* component[pathogenFindings] ^short = "Pathogens identified (candida, trichomonas, actinomyces, herpes)"
+
+* component[microfloraType].code = $sct#310210008 "Microbiota of genitourinary system normal (finding)"
+* component[microfloraType].value[x] only CodeableConcept
+* component[microfloraType].valueCodeableConcept from CervicalMicrofloraVS (extensible)
+* component[microfloraType] ^short = "Microflora type (rod-shaped, coccobacillary, clue cells, etc.)"
+
+* component[immunocytochemistry].code = $sct#127798001 "Immunocytochemical procedure (procedure)"
+* component[immunocytochemistry].value[x] only CodeableConcept
+* component[immunocytochemistry] ^short = "p16/Ki-67 dual staining result (positive/negative)"
+
+* component[specimenSuitability].code = $sct#371507005 "Adequacy of specimen (observable entity)"
+* component[specimenSuitability].value[x] only CodeableConcept
+* component[specimenSuitability] ^short = "Specimen suitability for evaluation (suitable/unsuitable with reason)"
+
 // Narrative
 * note 0..1
 * note.text 1..1

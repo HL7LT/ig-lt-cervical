@@ -11,3 +11,7 @@ Title: "Composition: Cervical Cancer Screening Diagnostic Summary (example)"
 * section[hpv].entry = Reference(diagnosticreport-hpv-example)
 * section[cytology].entry = Reference(diagnosticreport-cytology-example)
 * section[colposcopy].entry = Reference(diagnosticreport-colposcopy-example)
+* section[imaging].entry = Reference(diagnosticreport-cervical-imaging-example)
+* section[overall].entry = Reference(diagnosticreport-cervical-example)
+* section[lifestyle].entry = Reference(https://build.fhir.org/ig/HL7LT/ig-lt-lifestyle/Observation-alcohol-consumption-example)
+* section[vitals].entry = Reference(https://build.fhir.org/ig/HL7LT/ig-lt-vitalsigns/Observation-blood-pressure-example)

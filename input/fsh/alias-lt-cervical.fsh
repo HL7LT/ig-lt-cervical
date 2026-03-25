@@ -11,7 +11,9 @@ Alias: $cytology-conclusion-lt-cervical-url = https://hl7.lt/fhir/cervical/Struc
 Alias: $cervical-screening-clinical-history-lt-cervical-url = https://hl7.lt/fhir/cervical/StructureDefinition/cervical-screening-clinical-history-lt-cervical
 Alias: $hpv-test-result-lt-cervical-url = https://hl7.lt/fhir/cervical/StructureDefinition/hpv-test-result-lt-cervical
 Alias: $cervical-diagnostic-summary-lt-cervical-url = https://hl7.lt/fhir/cervical/StructureDefinition/cervical-diagnostic-summary-lt-cervical
+Alias: $cervical-diagnostic-report-lt-cervical-url = https://hl7.lt/fhir/cervical/StructureDefinition/cervical-diagnostic-report-lt-cervical
 Alias: $cytology-diagnostic-report-lt-cervical-url = https://hl7.lt/fhir/cervical/StructureDefinition/cytology-diagnostic-report-lt-cervical
+Alias: $cervical-imaging-diagnostic-report-lt-cervical-url = https://hl7.lt/fhir/cervical/StructureDefinition/cervical-imaging-diagnostic-report-lt-cervical
 Alias: $colposcopy-diagnostic-report-lt-cervical-url = https://hl7.lt/fhir/cervical/StructureDefinition/colposcopy-diagnostic-report-lt-cervical
 Alias: $hpv-diagnostic-report-lt-cervical-url = https://hl7.lt/fhir/cervical/StructureDefinition/hpv-diagnostic-report-lt-cervical
 
@@ -30,3 +32,20 @@ Alias: $hpv-risk-group-vs-lt-cervical-url = https://tx.hl7.lt/fhir/ValueSet/hpv-
 Alias: $hpv-vaccination-status-lt-cervical-url = https://tx.hl7.lt/fhir/ValueSet/hpv-vaccination-status
 Alias: $cervical-sample-collection-site-lt-cervical-url = https://tx.hl7.lt/fhir/ValueSet/cervical-sample-collection-site
 Alias: $yes-no-unknown-lt-cervical-url = https://tx.hl7.lt/fhir/ValueSet/yes-no-unknown
+
+// === New Profiles (Report + Composition + Histopathology) ===
+Alias: $cervical-report-lt-cervical-url = https://hl7.lt/fhir/cervical/StructureDefinition/cervical-report-lt-cervical
+Alias: $cervical-composition-lt-cervical-url = https://hl7.lt/fhir/cervical/StructureDefinition/cervical-composition-lt-cervical
+Alias: $histopathology-diagnostic-report-lt-cervical-url = https://hl7.lt/fhir/cervical/StructureDefinition/histopathology-diagnostic-report-lt-cervical
+Alias: $histopathology-conclusion-lt-cervical-url = https://hl7.lt/fhir/cervical/StructureDefinition/histopathology-conclusion-lt-cervical
+Alias: $cervical-condition-lt-cervical-url = https://hl7.lt/fhir/cervical/StructureDefinition/cervical-condition-lt-cervical
+
+// === New Terminology ===
+Alias: $cervical-pathogen-vs-url = https://tx.hl7.lt/fhir/ValueSet/cervical-pathogen
+Alias: $cervical-microflora-vs-url = https://tx.hl7.lt/fhir/ValueSet/cervical-microflora
+Alias: $cervical-histopathology-diagnosis-vs-url = https://tx.hl7.lt/fhir/ValueSet/cervical-histopathology-diagnosis
+Alias: $cervical-histological-grade-vs-url = https://tx.hl7.lt/fhir/ValueSet/cervical-histological-grade
+Alias: $cervical-surgical-margins-vs-url = https://tx.hl7.lt/fhir/ValueSet/cervical-surgical-margins
+Alias: $cervical-tnm-pt-vs-url = https://tx.hl7.lt/fhir/ValueSet/cervical-tnm-pt
+Alias: $cervical-tnm-pr-vs-url = https://tx.hl7.lt/fhir/ValueSet/cervical-tnm-pr
+Alias: $cervical-biopsy-quadrant-vs-url = https://tx.hl7.lt/fhir/ValueSet/cervical-biopsy-quadrant

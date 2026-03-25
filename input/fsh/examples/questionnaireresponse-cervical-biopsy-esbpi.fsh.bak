@@ -1,0 +1,18 @@
+Instance: questionnaireresponse-cervical-biopsy-esbpi-example
+InstanceOf: QuestionnaireResponse
+Usage: #example
+Title: "QuestionnaireResponse: Cervical Biopsy ESPBI Form (example)"
+* questionnaire = "https://hl7.lt/fhir/cervical/Questionnaire/cervical-biopsy-esbpi"
+* status = #completed
+* subject = Reference(patient-female-example)
+* authored = "2025-02-10T14:00:00+02:00"
+* item[0].linkId = "patient-id"
+* item[0].answer.valueString = "12345"
+* item[1].linkId = "biopsy-date"
+* item[1].answer.valueDate = "2025-02-10"
+* item[2].linkId = "biopsy-site"
+* item[2].answer.valueCoding = $sct#71252005 "Cervix uteri"
+* item[3].linkId = "procedure-type"
+* item[3].answer.valueString = "Punch biopsy"
+* item[4].linkId = "findings"
+* item[4].answer.valueString = "Normal squamous epithelium"

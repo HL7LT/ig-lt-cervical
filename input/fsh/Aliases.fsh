@@ -1,7 +1,11 @@
 Alias: $loinc = http://loinc.org
 Alias: $icd-10 = http://hl7.org/fhir/sid/icd-10
+Alias: $icd-10-vs = http://hl7.org/fhir/ValueSet/icd-10
+Alias: $icd-o-3-vs = https://tx.hl7.lt/fhir/ValueSet/icd-o-3
+Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
 Alias: $sct = http://snomed.info/sct
 Alias: $sct-vs = http://snomed.info/sct?fhir_vs
+Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
 
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $units-of-time = http://hl7.org/fhir/ValueSet/units-of-time

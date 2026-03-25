@@ -1,0 +1,14 @@
+Instance: questionnaireresponse-cervical-screening-dr-example
+InstanceOf: QuestionnaireResponse
+Usage: #example
+Title: "QuestionnaireResponse: Cervical Screening Doctor Form (example)"
+* questionnaire = "https://hl7.lt/fhir/cervical/Questionnaire/cervical-screening-dr"
+* status = #completed
+* subject = Reference(patient-female-example)
+* authored = "2025-02-10T15:00:00+02:00"
+* item[0].linkId = "symptoms"
+* item[0].answer.valueCoding = $sct#162076009 "Abnormal vaginal bleeding"
+* item[1].linkId = "risk-factors"
+* item[1].answer.valueString = "Smoking"
+* item[2].linkId = "recommendation"
+* item[2].answer.valueString = "Refer for colposcopy"

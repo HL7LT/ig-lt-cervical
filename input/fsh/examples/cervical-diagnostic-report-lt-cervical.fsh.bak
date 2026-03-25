@@ -1,0 +1,19 @@
+Instance: diagnosticreport-cervical-example
+InstanceOf: CervicalDiagnosticReportLtCervical
+Usage: #example
+Title: "DiagnosticReport: Cervical Cancer Screening Report (example)"
+* status = #final
+* category = $observation-category#exam
+* code = $sct#71341001 "Screening for malignant neoplasm of cervix (procedure)"
+* subject = Reference(patient-female-example)
+* effectiveDateTime = "2025-02-10T12:00:00+02:00"
+* issued = "2025-02-10T12:30:00+02:00"
+* performer = Reference(organization-example)
+* resultsInterpreter = Reference(practitioner-example)
+* result = Reference(observation-hpv-result-example)
+* result = Reference(observation-cytology-conclusion-example)
+* result = Reference(observation-colposcopy-finding-example)
+* supportingInfo.type = $sct#103693007 "Diagnostic procedure (procedure)"
+* supportingInfo.reference = Reference(procedure-colposcopy-example)
+* conclusion = "Patient screened for cervical cancer. HPV positive, cytology ASC-US, colposcopy recommended."
+* conclusionCode = $sct#10828004 "Positive (qualifier value)"

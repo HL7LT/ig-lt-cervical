@@ -1,0 +1,28 @@
+Instance: questionnaire-cervical-biopsy-esbpi
+InstanceOf: Questionnaire
+Usage: #definition
+Title: "Questionnaire: Cervical Biopsy ESPBI Form"
+* url = "https://hl7.lt/fhir/cervical/Questionnaire/cervical-biopsy-esbpi"
+* name = "CervicalBiopsyESBPI"
+* title = "Cervical Biopsy ESPBI Form"
+* status = #active
+* description = "Questionnaire for cervical biopsy procedure based on ESPBI form"
+* item[0].linkId = "patient-id"
+* item[0].text = "Patient ID"
+* item[0].type = #string
+* item[1].linkId = "biopsy-date"
+* item[1].text = "Biopsy Date"
+* item[1].type = #date
+* item[2].linkId = "biopsy-site"
+* item[2].text = "Biopsy Site"
+* item[2].type = #coding
+* item[2].answerOption[0].valueCoding = $sct#71252005 "Cervix uteri"
+* item[2].answerOption[1].valueCoding = $sct#71252005 "Endocervix"
+* item[3].linkId = "procedure-type"
+* item[3].text = "Procedure Type"
+* item[3].type = #string
+* item[3].answerOption[0].valueString = "Punch biopsy"
+* item[3].answerOption[1].valueString = "LEEP"
+* item[4].linkId = "findings"
+* item[4].text = "Findings"
+* item[4].type = #text

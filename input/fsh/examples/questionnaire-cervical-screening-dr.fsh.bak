@@ -1,0 +1,20 @@
+Instance: questionnaire-cervical-screening-dr
+InstanceOf: Questionnaire
+Usage: #definition
+Title: "Questionnaire: Cervical Screening Doctor Form"
+* url = "https://hl7.lt/fhir/cervical/Questionnaire/cervical-screening-dr"
+* name = "CervicalScreeningDr"
+* title = "Cervical Screening Doctor Form"
+* status = #active
+* description = "Questionnaire for cervical screening by doctor"
+* item[0].linkId = "symptoms"
+* item[0].text = "Symptoms"
+* item[0].type = #coding
+* item[0].answerOption[0].valueCoding = $sct#62315008 "Diarrhea"
+* item[0].answerOption[1].valueCoding = $sct#162076009 "Abnormal vaginal bleeding"
+* item[1].linkId = "risk-factors"
+* item[1].text = "Risk Factors"
+* item[1].type = #text
+* item[2].linkId = "recommendation"
+* item[2].text = "Recommendation"
+* item[2].type = #text
