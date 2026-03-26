@@ -16,7 +16,7 @@
 // Group 11 (immunocytochemistry) → CytologyConclusionLtCervical.component[immunocytochemistry]
 // ══════════════════════════════════════════════════════════════
 
-Instance: questionnaireresponse-cervical-cytology-hpv-espbi-example
+Instance: qr-cervical-cytology-hpv-espbi-example
 InstanceOf: QuestionnaireResponse
 Usage: #example
 Title: "QuestionnaireResponse: Cervical Cytology and HPV ESPBI Form (example)"

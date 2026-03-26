@@ -4,7 +4,7 @@
 //           punch biopsy from left superior quadrant
 // ══════════════════════════════════════════════════════════════
 
-Instance: questionnaireresponse-cervical-colposcopy-espbi-example
+Instance: qr-cervical-colposcopy-espbi-example
 InstanceOf: QuestionnaireResponse
 Usage: #example
 Title: "QuestionnaireResponse: Cervical Colposcopy ESPBI (example)"

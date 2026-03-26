@@ -8,10 +8,10 @@ Four ESPBI questionnaires model the data collection forms used in clinical pract
 
 | Questionnaire | Description | FHIR Artifact |
 |---------------|-------------|---------------|
-| Cytology + HPV | HPV testing and cytological examination referral and results | [Questionnaire](Questionnaire-questionnaire-cervical-cytology-hpv-espbi.html) / [Response](QuestionnaireResponse-questionnaireresponse-cervical-cytology-hpv-espbi-example.html) |
-| Histology | Pathological histological examination referral, macroscopic/microscopic findings, and diagnosis | [Questionnaire](Questionnaire-questionnaire-cervical-histology-espbi.html) / [Response](QuestionnaireResponse-questionnaireresponse-cervical-histology-espbi-example.html) |
-| Colposcopy | Colposcopy procedure, Swede score, biopsy details | [Questionnaire](Questionnaire-questionnaire-cervical-colposcopy-espbi.html) / [Response](QuestionnaireResponse-questionnaireresponse-cervical-colposcopy-espbi-example.html) |
-| Pathological Diagnosis | Structured diagnosis coding (VLK, ICD-10, ICD-O, SNOMED CT) | [Questionnaire](Questionnaire-questionnaire-cervical-pathological-diagnosis-espbi.html) / [Response](QuestionnaireResponse-questionnaireresponse-cervical-pathological-diagnosis-espbi-example.html) |
+| Cytology + HPV | HPV testing and cytological examination referral and results | [Questionnaire](Questionnaire-questionnaire-cervical-cytology-hpv-espbi.html) / [Response](QuestionnaireResponse-qr-cervical-cytology-hpv-espbi-example.html) |
+| Histology | Pathological histological examination referral, macroscopic/microscopic findings, and diagnosis | [Questionnaire](Questionnaire-questionnaire-cervical-histology-espbi.html) / [Response](QuestionnaireResponse-qr-cervical-histology-espbi-example.html) |
+| Colposcopy | Colposcopy procedure, Swede score, biopsy details | [Questionnaire](Questionnaire-questionnaire-cervical-colposcopy-espbi.html) / [Response](QuestionnaireResponse-qr-cervical-colposcopy-espbi-example.html) |
+| Pathological Diagnosis | Structured diagnosis coding (VLK, ICD-10, ICD-O, SNOMED CT) | [Questionnaire](Questionnaire-questionnaire-cervical-pathological-diagnosis-espbi.html) / [Response](QuestionnaireResponse-qr-cervical-pathological-diagnosis-espbi-example.html) |
 
 ---
 

@@ -5,7 +5,7 @@
 //   pT staging not applicable (precancerous), G2 grade
 // ══════════════════════════════════════════════════════════════
 
-Instance: questionnaireresponse-cervical-path-diag-espbi-example
+Instance: qr-cervical-path-diag-espbi-example
 InstanceOf: QuestionnaireResponse
 Usage: #example
 Title: "QuestionnaireResponse: Cervical Pathological Diagnosis ESPBI (example)"

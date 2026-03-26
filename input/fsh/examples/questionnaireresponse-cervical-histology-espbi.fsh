@@ -6,7 +6,7 @@
 //   G2, clear margins, no pLVI, pTis, pR0.
 // ══════════════════════════════════════════════════════════════
 
-Instance: questionnaireresponse-cervical-histology-espbi-example
+Instance: qr-cervical-histology-espbi-example
 InstanceOf: QuestionnaireResponse
 Usage: #example
 Title: "QuestionnaireResponse: Cervical Histopathology – HSIL/CIN2, Cone Biopsy (example)"
