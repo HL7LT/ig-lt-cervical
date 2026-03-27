@@ -1,6 +1,6 @@
 CodeSystem: HpvRiskGroupLtCervical
 Id: hpv-risk-group-lt-cervical
-Title: "HPV Risk Groups (LT Cervical)"
+Title: "HPV Risk Groups CodeSystem (LT Cervical)"
 Description: "Specific HPV risk groupings"
 * ^url = $hpv-risk-group-lt-cervical-url
 * ^status = #active
@@ -14,7 +14,7 @@ Description: "Specific HPV risk groupings"
 
 ValueSet: HpvRiskGroupLtCervicalVS
 Id: hpv-risk-group-vs-lt-cervical
-Title: "HPV Risk Groups (LT Cervical)"
+Title: "HPV Risk Groups ValueSet (LT Cervical)"
 Description: "ValueSet containing the ADP-specific risk buckets."
 * ^url = $hpv-risk-group-vs-lt-cervical-url
 * ^status = #active

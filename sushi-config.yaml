@@ -94,6 +94,44 @@ parameters:
   translation-sources:
     - input/translations/lt
 
+resources:
+  DiagnosticReport/diagnosticreport-cytology-example:
+    name: Cytology Diagnostic Report example
+    description: Sample cytology diagnostic report used in the LT Cervical IG
+    exampleBoolean: true
+  DiagnosticReport/diagnosticreport-colposcopy-example:
+    name: Colposcopy Diagnostic Report example
+    description: Sample colposcopy diagnostic report used in the LT Cervical IG
+    exampleBoolean: true
+  Observation/observation-colposcopy-finding-example:
+    name: Colposcopy Finding Observation example
+    description: Example colposcopy finding observation used in the LT Cervical IG
+    exampleBoolean: true
+  Observation/observation-cytology-conclusion-example:
+    name: Cytology Conclusion Observation example
+    description: Example cytology conclusion observation used in the LT Cervical IG
+    exampleBoolean: true
+  Observation/observation-hpv-result-group-example:
+    name: HPV Result Group Observation example
+    description: Example HPV result group observation used in the LT Cervical IG
+    exampleBoolean: true
+  Observation/observation-hpv-result-example:
+    name: HPV Result Observation example
+    description: Example HPV result observation used in the LT Cervical IG
+    exampleBoolean: true
+  Observation/observation-colposcopy-history-example:
+    name: Colposcopy History Observation example
+    description: Example colposcopy history observation used in the LT Cervical IG
+    exampleBoolean: true
+  Procedure/procedure-colposcopy-example:
+    name: Colposcopy Procedure example
+    description: Example colposcopy procedure used in the LT Cervical IG
+    exampleBoolean: true
+  Specimen/specimen-cervix-hpv-example:
+    name: Cervix HPV Specimen example
+    description: Example cervix HPV specimen used in the LT Cervical IG
+    exampleBoolean: true
+
 #   validation: [allow-any-extensions, no-broken-links]
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮

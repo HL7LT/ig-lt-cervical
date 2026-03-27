@@ -6,24 +6,24 @@ This page lists all ValueSets and CodeSystems defined in the Lithuanian Cervical
 
 | CodeSystem | Description |
 |-----------|-------------|
-| [CervixScoreLtCervical](CodeSystem-cervix-score.html) | Local codes for cervical cancer screening scoring instruments |
-| [HpvRiskGroupLtCervical](CodeSystem-hpv-risk-group.html) | HPV genotype risk groups (highest, medium, lower, low) |
+| [CervixScoreLtCervical](CodeSystem-cervix-score-lt-cervical.html) | Local codes for cervical cancer screening scoring instruments |
+| [HpvRiskGroupLtCervical](CodeSystem-hpv-risk-group-lt-cervical.html) | HPV genotype risk groups (highest, medium, lower, low) |
 
 #### ValueSets — HPV Testing
 
 | ValueSet | Description |
 |---------|-------------|
-| [HpvTestResultLtCervicalVS](ValueSet-hpv-test-result.html) | Overall HPV DNA test result codes (negative, positive, unsatisfactory) |
-| [HpvGenotypeLtCervicalVS](ValueSet-hpv-genotype.html) | High-risk HPV genotypes (16, 18, 31, 33, 35, 39, 45, 51, 52, 56, 58, 59, 66, 68) |
-| [HpvRiskGroupLtCervicalVS](ValueSet-hpv-risk-group.html) | HPV risk group classification |
-| [HpvVaccinationStatusLtCervicalVS](ValueSet-hpv-vaccination-status.html) | HPV vaccination status |
+| [HpvTestResultLtCervicalVS](ValueSet-hpv-test-result-lt-cervical.html) | Overall HPV DNA test result codes (negative, positive, unsatisfactory) |
+| [HpvGenotypeLtCervicalVS](ValueSet-hpv-genotype-lt-cervical.html) | High-risk HPV genotypes (16, 18, 31, 33, 35, 39, 45, 51, 52, 56, 58, 59, 66, 68) |
+| [HpvRiskGroupLtCervicalVS](ValueSet-hpv-risk-group-vs-lt-cervical.html) | HPV risk group classification |
+| [HpvVaccinationStatusLtCervicalVS](ValueSet-hpv-vaccination-status-lt-cervical.html) | HPV vaccination status |
 
 #### ValueSets — Cytology
 
 | ValueSet | Description |
 |---------|-------------|
-| [CytologyConclusionLtCervicalVS](ValueSet-cytology-conclusion.html) | Bethesda classification diagnoses (NILM, ASC-US, LSIL, ASC-H, HSIL, AGC, AIS, SCC) |
-| [CytologyPreparationMethodLtCervicalVS](ValueSet-cytology-preparation-method.html) | Specimen preparation methods (conventional smear, liquid-based) |
+| [CytologyConclusionLtCervicalVS](ValueSet-cytology-conclusion-lt-cervical.html) | Bethesda classification diagnoses (NILM, ASC-US, LSIL, ASC-H, HSIL, AGC, AIS, SCC) |
+| [CytologyPreparationMethodLtCervicalVS](ValueSet-cytology-preparation-method-lt-cervical.html) | Specimen preparation methods (conventional smear, liquid-based) |
 | [CervicalPathogenVS](ValueSet-cervical-pathogen.html) | Pathogens identified during cytology (candida, trichomonas, actinomyces, herpes) |
 | [CervicalMicrofloraVS](ValueSet-cervical-microflora.html) | Microflora types observed during cytology |
 
@@ -31,10 +31,10 @@ This page lists all ValueSets and CodeSystems defined in the Lithuanian Cervical
 
 | ValueSet | Description |
 |---------|-------------|
-| [ColposcopyAdequacyLtCervicalVS](ValueSet-colposcopy-adequacy.html) | Suitability of colposcopy examination |
-| [ColposcopySwedeRiskLtCervicalVS](ValueSet-colposcopy-swede-risk.html) | Risk categories from Swede score (low 0–3, high 4–10) |
-| [ColposcopyProcedureTypeLtCervicalVS](ValueSet-colposcopy-procedure-type.html) | Biopsy/excisional procedures (punch, LEEP, cone, curettage) |
-| [CervicalBiopsySiteLtCervicalVS](ValueSet-cervical-biopsy-site.html) | Anatomical biopsy site localization |
+| [ColposcopyAdequacyLtCervicalVS](ValueSet-colposcopy-adequacy-lt-cervical.html) | Suitability of colposcopy examination |
+| [ColposcopySwedeRiskLtCervicalVS](ValueSet-colposcopy-swede-risk-lt-cervical.html) | Risk categories from Swede score (low 0–3, high 4–10) |
+| [ColposcopyProcedureTypeLtCervicalVS](ValueSet-colposcopy-procedure-type-lt-cervical.html) | Biopsy/excisional procedures (punch, LEEP, cone, curettage) |
+| [CervicalBiopsySiteLtCervicalVS](ValueSet-cervical-biopsy-site-lt-cervical.html) | Anatomical biopsy site localization |
 | [CervicalBiopsyQuadrantVS](ValueSet-cervical-biopsy-quadrant.html) | Cervical quadrants (I–IV) and cervical canal |
 
 #### ValueSets — Histopathology
@@ -51,5 +51,5 @@ This page lists all ValueSets and CodeSystems defined in the Lithuanian Cervical
 
 | ValueSet | Description |
 |---------|-------------|
-| [CervicalSampleCollectionSiteLtCervicalVS](ValueSet-cervical-sample-collection-site.html) | Anatomical sample collection sites (endocervix, exocervix, vagina, vulva) |
-| [YesNoUnknownLtCervicalVS](ValueSet-yes-no-unknown.html) | Yes/No/Unknown qualifier values |
+| [CervicalSampleCollectionSiteLtCervicalVS](ValueSet-cervical-sample-collection-site-lt-cervical.html) | Anatomical sample collection sites (endocervix, exocervix, vagina, vulva) |
+| [YesNoUnknownLtCervicalVS](ValueSet-yes-no-unknown-lt-cervical.html) | Yes/No/Unknown qualifier values |
