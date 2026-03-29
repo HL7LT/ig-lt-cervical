@@ -4,8 +4,9 @@ Title: "Cervical Microflora"
 Description: "Microflora types observed during cervical cytological examination."
 * ^url = $cervical-microflora-vs-url
 * ^status = #active
+* ^experimental = false
 * insert SNOMEDCopyrightForVS
-* $sct#310210008 "Microbiota of genitourinary system normal (finding)"
+* $sct#31021000087105 "Microbiota of genitourinary system normal (finding)"
 * $sct#44762009 "Genus Bacillus (organism)"
 * $sct#83045001 "Cocci (organism)"
 * $sct#250440009 "Clue cells present (finding)"

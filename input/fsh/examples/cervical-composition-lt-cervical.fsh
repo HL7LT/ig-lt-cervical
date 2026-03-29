@@ -10,7 +10,7 @@ Description: "Example of a cervical cancer screening episode composition linking
 * category[imaging] = $loinc#18748-4 "Diagnostic imaging study"
 * subject = Reference(patient-female-example)
 * date = "2025-03-20"
-* author = Reference(practitioner-example)
+* author = Reference(practitioner-role-example)
 * title = "Cervical Cancer Screening Episode"
 * extension[diagnosticreport-reference].valueReference = Reference(diagnosticreport-cervical-report-example)
 
@@ -28,11 +28,13 @@ Description: "Example of a cervical cancer screening episode composition linking
 * section[order].title = "Order"
 * section[order].text.status = #generated
 * section[order].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Cervical cancer screening referral.</p></div>"
+* section[order].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable "Unavailable"
 
 // Required comparison section
 * section[comparison].title = "Comparison"
 * section[comparison].text.status = #generated
 * section[comparison].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>No prior studies available for comparison.</p></div>"
+* section[comparison].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable "Unavailable"
 
 // Inherited imaging sections (required by ImagingCompositionLt)
 * section[history].title = "Clinical History"
@@ -55,10 +57,17 @@ Description: "Example of a cervical cancer screening episode composition linking
 * section[impression].title = "Impression"
 * section[impression].text.status = #generated
 * section[impression].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Low-risk findings. Follow-up in 12 months recommended.</p></div>"
+* section[impression].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable "Unavailable"
 
 * section[recommendation].title = "Recommendations"
 * section[recommendation].text.status = #generated
 * section[recommendation].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Repeat HPV and cytology in 12 months.</p></div>"
+* section[recommendation].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable "Unavailable"
+
+* section[communication].title = "Communications"
+* section[communication].text.status = #generated
+* section[communication].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>No additional communications.</p></div>"
+* section[communication].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable "Unavailable"
 
 // Cervical-specific sub-report sections
 * section[hpvReport].title = "HPV Testing"
@@ -80,11 +89,13 @@ Description: "Example of a cervical cancer screening episode composition linking
 * section[colposcopyReport].entry = Reference(diagnosticreport-colposcopy-example)
 
 * section[lifestyle].title = "Lifestyle Factors"
-* section[lifestyle].code = $sct#284535002 "Lifestyle (observable entity)"
+* section[lifestyle].code = $sct#443781008 "Assessment of lifestyle (procedure)"
 * section[lifestyle].text.status = #generated
 * section[lifestyle].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>See <a href=\"https://build.fhir.org/ig/HL7LT/ig-lt-lifestyle/Observation-observation-tobacco-use-example.html\">Tobacco Use</a> and <a href=\"https://build.fhir.org/ig/HL7LT/ig-lt-lifestyle/Observation-observation-physical-activity-example.html\">Physical Activity</a> examples from the Lifestyle IG.</p></div>"
+* section[lifestyle].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable "Unavailable"
 
 * section[vitals].title = "Vital Signs"
-* section[vitals].code = $sct#118227000 "Measurements and tests (procedure)"
+* section[vitals].code = $sct#118227000 "Vital signs finding (finding)"
 * section[vitals].text.status = #generated
 * section[vitals].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>See <a href=\"https://build.fhir.org/ig/HL7LT/ig-lt-vitalsigns/Observation-observation-bmi-example.html\">BMI</a> example from the VitalSigns IG.</p></div>"
+* section[vitals].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable "Unavailable"

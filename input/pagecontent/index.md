@@ -83,6 +83,9 @@ Navigate the sections below to access the profiles, terminology bindings, and de
 
 | Name | Role | Organization |
 |-----|-----|-----|
+| Audra Stepanauskaite | Primary Author | [LMB](https://lmb.lt) |
+| Albert Kuslevic | Primary Author | [LMB](https://lmb.lt) |
+| [Igor Bossenko](https://about.askigor.eu) | Primary Author | [HELEX Solutions](https://helex.solutions) |
 | [Kati Laidus](https://www.linkedin.com/in/kati-laidus/) | Co-Author | [HELEX Solutions](https://helex.solutions) |
-| [Igor Bossenko](https://about.askigor.eu) | Co-Author | [HELEX Solutions](https://helex.solutions) |
 | Martynas Bieliauskas | Co-Author | [LMB](https://lmb.lt) |
+

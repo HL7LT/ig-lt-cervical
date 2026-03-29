@@ -4,6 +4,7 @@ Title: "Cervical Histopathology Diagnosis"
 Description: "Histopathological diagnostic conclusions for cervical tissue examination, aligned with WHO Classification of Female Genital Tumours (2020)."
 * ^url = $cervical-histopathology-diagnosis-vs-url
 * ^status = #active
+* ^experimental = false
 * insert SNOMEDCopyrightForVS
 
 // Normal / benign

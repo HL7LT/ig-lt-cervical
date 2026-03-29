@@ -74,11 +74,11 @@ Description: "Cervical cancer screening episode composition extending the base i
 * section[histologyReport].entry only Reference(HistopathologyDiagnosticReportLtCervical)
 
 * section[lifestyle].title = "Lifestyle Factors"
-* section[lifestyle].code = $sct#284535002 "Lifestyle (observable entity)"
+* section[lifestyle].code = $sct#443781008 "Assessment of lifestyle (procedure)"
 * section[lifestyle].entry only Reference(Observation)
 * section[lifestyle] ^short = "Cross-IG references to lifestyle observations (tobacco use, physical activity)"
 
 * section[vitals].title = "Vital Signs"
-* section[vitals].code = $sct#118227000 "Measurements and tests (procedure)"
+* section[vitals].code = $sct#118227000 "Vital signs finding (finding)"
 * section[vitals].entry only Reference(Observation)
 * section[vitals] ^short = "Cross-IG references to vital sign observations (BMI, blood pressure)"

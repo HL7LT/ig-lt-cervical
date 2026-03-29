@@ -81,9 +81,9 @@ Description: "ESPBI form for structured coding of cervical pathological diagnose
 * item[=].item[+].linkId = "tnmStaging.pT"
 * item[=].item[=].text = "Pathological T category (pT)"
 * item[=].item[=].type = #coding
-* item[=].item[=].answerOption[+].valueCoding = $sct#1228882005 "American Joint Committee on Cancer pTX (qualifier value)"
-* item[=].item[=].answerOption[+].valueCoding = $sct#1228884006 "American Joint Committee on Cancer pT0 (qualifier value)"
-* item[=].item[=].answerOption[+].valueCoding = $sct#1228950008 "American Joint Committee on Cancer pT1 (qualifier value)"
+* item[=].item[=].answerOption[+].valueCoding = $sct#1228950008 "American Joint Committee on Cancer pTX (qualifier value)"
+* item[=].item[=].answerOption[+].valueCoding = $sct#1228951007 "American Joint Committee on Cancer pT0 (qualifier value)"
+* item[=].item[=].answerOption[+].valueCoding = $sct#1228953005 "American Joint Committee on Cancer pTis (qualifier value)"
 * item[=].item[=].answerOption[+].valueCoding = $sct#1228957006 "American Joint Committee on Cancer pT1a (qualifier value)"
 * item[=].item[=].answerOption[+].valueCoding = $sct#1228960004 "American Joint Committee on Cancer pT1a1 (qualifier value)"
 * item[=].item[=].answerOption[+].valueCoding = $sct#1228962007 "American Joint Committee on Cancer pT1a2 (qualifier value)"

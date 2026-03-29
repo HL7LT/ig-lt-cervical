@@ -10,7 +10,7 @@ Description: "Example of a cervical cancer screening report linking HPV, cytolog
 * subject = Reference(patient-female-example)
 * effectiveDateTime = "2025-03-15T10:00:00+02:00"
 * issued = "2025-03-20T14:30:00+02:00"
-* performer = Reference(practitioner-example)
+* performer = Reference(practitioner-role-example)
 * composition = Reference(composition-cervical-screening-episode-example)
 * result[+] = Reference(observation-hpv-result-example)
 * result[+] = Reference(observation-cytology-conclusion-example)

@@ -4,6 +4,7 @@ Title: "Cervical Pathogen"
 Description: "Pathogens identified during cervical cytological examination."
 * ^url = $cervical-pathogen-vs-url
 * ^status = #active
+* ^experimental = false
 * insert SNOMEDCopyrightForVS
 * $sct#168418000 "Cervical smear - candida (finding)"
 * $sct#168417005 "Cervical smear - trichomonas (finding)"

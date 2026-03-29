@@ -21,7 +21,7 @@ InstanceOf: QuestionnaireResponse
 Usage: #example
 Title: "QuestionnaireResponse: Cervical Cytology and HPV ESPBI Form (example)"
 Description: "Completed ESPBI form for routine cervical screening: HPV 16 detected (highest risk), LSIL on cytology, p16/Ki-67 positive."
-* questionnaire = "https://hl7.lt/fhir/cervical/Questionnaire/cervical-cytology-hpv-espbi"
+* questionnaire = "https://hl7.lt/fhir/cervical/Questionnaire/questionnaire-cervical-cytology-hpv-espbi"
 * status = #completed
 * subject = Reference(patient-female-example)
 * authored = "2025-03-10T10:30:00+02:00"

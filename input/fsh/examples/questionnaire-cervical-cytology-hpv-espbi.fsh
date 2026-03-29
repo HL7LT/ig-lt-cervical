@@ -21,7 +21,7 @@ InstanceOf: Questionnaire
 Usage: #definition
 Title: "Questionnaire: Cervical Cytology and HPV ESPBI Form"
 Description: "ESPBI form for cervical cancer screening: HPV testing and cytological examination. Based on ADP Table 7.1 (cervical cancer prevention program cytology and HPV kit)."
-* url = "https://hl7.lt/fhir/cervical/Questionnaire/cervical-cytology-hpv-espbi"
+* url = "https://hl7.lt/fhir/cervical/Questionnaire/questionnaire-cervical-cytology-hpv-espbi"
 * name = "CervicalCytologyHpvESPBI"
 * title = "Cervical Cytology and HPV ESPBI Form"
 * status = #active

@@ -46,7 +46,7 @@ Description: "Example response for the pathological diagnosis ESPBI form: HSIL/C
 
 * item[=].item[+].linkId = "tnmStaging.pT"
 * item[=].item[=].text = "Pathological T category (pT)"
-* item[=].item[=].answer[+].valueCoding = $sct#1228882005 "American Joint Committee on Cancer pTX (qualifier value)"
+* item[=].item[=].answer[+].valueCoding = $sct#1228953005 "American Joint Committee on Cancer pTis (qualifier value)"
 
 * item[=].item[+].linkId = "tnmStaging.pR"
 * item[=].item[=].text = "Residual tumour (pR)"

@@ -34,7 +34,7 @@ Description: "Histopathological diagnostic conclusion for cervical tissue examin
     pLVI 0..1 MS and
     surgicalMargins 0..* MS
 
-* component[histologicalGrade].code = $sct#371469007 "Histopathological grading status (observable entity)"
+* component[histologicalGrade].code = $sct#371469007 "Histologic grade of neoplasm (observable entity)"
 * component[histologicalGrade].value[x] only CodeableConcept
 * component[histologicalGrade].valueCodeableConcept from CervicalHistologicalGradeVS (required)
 * component[histologicalGrade] ^short = "Histological grade of differentiation (G1-G3, GX)"

@@ -4,6 +4,7 @@ Title: "Cervical Surgical Margins"
 Description: "Status of surgical margins in cervical excision specimens."
 * ^url = $cervical-surgical-margins-vs-url
 * ^status = #active
+* ^experimental = false
 * insert SNOMEDCopyrightForVS
 * $sct#310342002 "Excision - clear margin (finding)"
 * $sct#396256001 "Surgical exocervical margin involved by malignant neoplasm (finding)"

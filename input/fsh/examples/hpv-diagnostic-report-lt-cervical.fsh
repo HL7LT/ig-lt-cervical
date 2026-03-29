@@ -1,12 +1,16 @@
 Instance: specimen-cervix-hpv-example
-InstanceOf: $EuSpecimenUrl
+InstanceOf: SpecimenLtLab
 Usage: #example
 Title: "Specimen: Cervical Sample for HPV Testing (example)"
+* identifier.system = "urn:oid:2.16.840.1.113883.4.330.1"
+* identifier.value = "SPEC-HPV-2025-0001"
 * status = #available
-* type = $sct#119361006 "Plasma specimen (specimen)"
+* type = $sct#258527002 "Cervical smear sample (specimen)"
 * subject = Reference(patient-female-example)
 * receivedTime = "2025-01-12T09:15:00+02:00"
 * collection.collectedDateTime = "2025-01-12T08:45:00+02:00"
+* collection.collector = Reference(practitioner-example)
+* collection.bodySite = $sct#71252005 "Cervix uteri structure (body structure)"
 
 Instance: diagnosticreport-hpv-example
 InstanceOf: HpvDiagnosticReportLtCervical
