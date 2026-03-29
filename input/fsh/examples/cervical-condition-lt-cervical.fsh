@@ -13,5 +13,5 @@ Description: "Example of a cervical cancer condition with pathological TNM stagi
 * stage[tumourStageT].type = $sct#78873005 "T category (observable entity)"
 * stage[tumourStageT].summary = $sct#1228960004 "American Joint Committee on Cancer pT1a1 (qualifier value)"
 
-* stage[tumourStageR].type = $sct#395537004 "Involvement of surgical margins by the tumor cannot be assessed (finding)"
+* stage[tumourStageR].type = $sct#396631001 "Surgical margin observable (observable entity)"
 * stage[tumourStageR].summary = $sct#1222638005 "American Joint Committee on Cancer R0 (qualifier value)"

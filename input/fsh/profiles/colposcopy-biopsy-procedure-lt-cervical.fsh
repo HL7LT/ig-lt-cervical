@@ -1,5 +1,5 @@
 Profile: ColposcopyBiopsyProcedureLtCervical
-Parent: Procedure
+Parent: ProcedureLt
 Id: colposcopy-biopsy-procedure-lt-cervical
 Title: "Procedure: Cervical Biopsy during Colposcopy"
 Description: "Biopsy or excisional procedures performed during colposcopy as part of the Lithuanian cervical cancer screening pathway."

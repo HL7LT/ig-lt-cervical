@@ -22,7 +22,7 @@ Description: "Clinical findings recorded during colposcopy, including suitabilit
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains swedeScore 0..1
-* component[swedeScore].code = CervixScoreLtCervical#swede-score "Swede score"
+* component[swedeScore].code = $sct#1389350002 "Swede score (observable entity)"
 * component[swedeScore].value[x] only integer
 * component contains swedeRisk 0..1
 * component[swedeRisk].code = $sct#407647007 "Risk assessment status (finding)"

@@ -16,14 +16,19 @@ Description: "Cervical cancer condition with pathological TNM staging (pT, pN, p
 * stage ^slicing.description = "Slicing based on TNM stage components"
 * stage contains
     tumourStageT 0..1 MS and
+    tumourStageN 0..1 MS and
     tumourStageR 0..1 MS and
     morphology 0..* MS
 
 * stage[tumourStageT].type = $sct#78873005 "T category (observable entity)"
-* stage[tumourStageT].summary from CervicalTnmPtVS (required)
-* stage[tumourStageT] ^short = "Pathological T stage (pTX–pT1b2)"
+* stage[tumourStageT].summary from $cervical-tumor-stage-t-vs-url (required)
+* stage[tumourStageT] ^short = "Pathological T stage (pTX–pT4)"
 
-* stage[tumourStageR].type = $sct#395537004 "Involvement of surgical margins by the tumor cannot be assessed (finding)"
+* stage[tumourStageN].type = $sct#277206009 "N category (observable entity)"
+* stage[tumourStageN].summary from $cervical-tumor-stage-n-vs-url (required)
+* stage[tumourStageN] ^short = "Regional lymph node stage (pNX–pN2)"
+
+* stage[tumourStageR].type = $sct#396631001 "Surgical margin observable (observable entity)"
 * stage[tumourStageR].summary from CervicalTnmPrVS (required)
 * stage[tumourStageR] ^short = "Residual tumor classification (pRX–pR2)"
 

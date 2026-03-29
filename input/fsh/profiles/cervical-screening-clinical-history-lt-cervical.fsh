@@ -1,5 +1,5 @@
 Profile: CervicalScreeningClinicalHistoryLtCervical
-Parent: Observation
+Parent: ObservationLt
 Id: cervical-screening-clinical-history-lt-cervical
 Title: "Observation: Clinical History"
 Description: "A panel of pre-analytic clinical observations."

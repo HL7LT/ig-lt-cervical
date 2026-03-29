@@ -71,7 +71,7 @@ Description: "Completed ESPBI cervical histopathological examination response: c
 
 * item[=].item[+].linkId = "colposcopyData.adequacy"
 * item[=].item[=].text = "Adequacy of colposcopy"
-* item[=].item[=].answer[0].valueCoding = $sct#443938003 "Suitable for assessment"
+* item[=].item[=].answer[0].valueCoding = $sct#125152006 "Specimen satisfactory for evaluation (finding)"
 
 // ── Group 4: Biopsy Procedure ───────────────────────────────────
 * item[+].linkId = "biopsyProcedure"

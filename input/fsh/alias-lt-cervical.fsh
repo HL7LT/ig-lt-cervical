@@ -49,3 +49,9 @@ Alias: $cervical-surgical-margins-vs-url = https://tx.hl7.lt/fhir/ValueSet/cervi
 Alias: $cervical-tnm-pt-vs-url = https://tx.hl7.lt/fhir/ValueSet/cervical-tnm-pt
 Alias: $cervical-tnm-pr-vs-url = https://tx.hl7.lt/fhir/ValueSet/cervical-tnm-pr
 Alias: $cervical-biopsy-quadrant-vs-url = https://tx.hl7.lt/fhir/ValueSet/cervical-biopsy-quadrant
+
+// Lab IG ValueSets used by cervical profiles
+Alias: $cervical-tumor-stage-t-vs-url = https://tx.hl7.lt/fhir/ValueSet/cervical-tumor-stage-t
+Alias: $cervical-tumor-stage-n-vs-url = https://tx.hl7.lt/fhir/ValueSet/cervical-tumor-stage-n
+Alias: $plvi-classification-vs-url = https://tx.hl7.lt/fhir/ValueSet/plvi-classification
+Alias: $cervical-cytology-test-type-vs-url = https://tx.hl7.lt/fhir/ValueSet/cervical-cytology-test-type

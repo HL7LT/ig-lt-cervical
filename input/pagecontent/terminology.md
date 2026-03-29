@@ -6,7 +6,7 @@ This page lists all ValueSets and CodeSystems defined in the Lithuanian Cervical
 
 | CodeSystem | Description |
 |-----------|-------------|
-| [CervixScoreLtCervical](CodeSystem-cervix-score-lt-cervical.html) | Local codes for cervical cancer screening scoring instruments |
+| [CervixScoreLtCervical](CodeSystem-cervix-score-lt-cervical.html) | **RETIRED** — Replaced by SNOMED CT concepts: 1389350002 \|Swede score\|, 1389349002 \|Assessment using Swede score\|, 1389348005 \|Swede score colposcopy scoring system\| |
 | [HpvRiskGroupLtCervical](CodeSystem-hpv-risk-group-lt-cervical.html) | HPV genotype risk groups (highest, medium, lower, low) |
 
 #### ValueSets — HPV Testing

@@ -112,8 +112,8 @@ Description: "ESPBI form for cervical histopathological examination based on ADP
 * item[=].item[+].linkId = "colposcopyData.adequacy"
 * item[=].item[=].text = "Adequacy of colposcopy"
 * item[=].item[=].type = #coding
-* item[=].item[=].answerOption[+].valueCoding = $sct#443938003 "Suitable for assessment"
-* item[=].item[=].answerOption[+].valueCoding = $sct#416237000 "Not suitable"
+* item[=].item[=].answerOption[+].valueCoding = $sct#125152006 "Specimen satisfactory for evaluation (finding)"
+* item[=].item[=].answerOption[+].valueCoding = $sct#125154007 "Specimen unsatisfactory for evaluation (finding)"
 
 // ── Group 4: Biopsy Procedure ───────────────────────────────────
 * item[+].linkId = "biopsyProcedure"

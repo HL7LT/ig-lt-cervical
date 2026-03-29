@@ -1,9 +1,9 @@
 ValueSet: CervicalTnmPtVS
 Id: cervical-tnm-pt
-Title: "Cervical TNM pT Stage"
-Description: "Pathological primary tumor (pT) staging for cervical cancer, AJCC 8th edition."
+Title: "Cervical TNM pT Stage [RETIRED]"
+Description: "RETIRED — Use CervicalTumorStageTLtLab from the Lab IG instead, which includes full pTX–pT4 staging. This ValueSet only covered pTX–pT1b2."
 * ^url = $cervical-tnm-pt-vs-url
-* ^status = #active
+* ^status = #retired
 * insert SNOMEDCopyrightForVS
 * $sct#1228950008 "American Joint Committee on Cancer pTX (qualifier value)"
 * $sct#1228951007 "American Joint Committee on Cancer pT0 (qualifier value)"

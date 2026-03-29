@@ -1,5 +1,6 @@
+// Cytology sub-features (NILM, LSIL, HSIL morphological details) are captured via Questionnaires (Option A)
 Profile: CytologyDiagnosticReportLtCervical
-Parent: DiagnosticReport
+Parent: DiagnosticReportLt
 Id: cytology-diagnostic-report-lt-cervical
 Title: "DiagnosticReport: Cervical Cytology (Pap Test)"
 Description: "Laboratory diagnostic report representing cervical cytology examination in the Lithuanian cervical cancer screening pathway (ADP)."
@@ -9,17 +10,20 @@ Description: "Laboratory diagnostic report representing cervical cytology examin
 * category 1..1
 * category = $observation-category#laboratory
 * code 1..1
-* code = $sct#416107004 "Cervical cytology test (procedure)"
+* code from CervicalCytologyTestTypeVS (required)
+* code ^short = "Type of cytological examination (routine PAP, liquid-based, diagnostic, immunocytochemistry)"
 * subject 1..1
 * subject only Reference(PatientLt)
 * effective[x] 1..1
 * issued 1..1
 * basedOn 0..*
-* basedOn only Reference(ServiceRequest)
+* basedOn only Reference(ServiceRequestLt)
 * performer 1..*
-* performer only Reference(OrganizationLt)
+* performer only Reference(OrganizationLt or PractitionerLt or PractitionerRoleLt)
+* performer ^short = "Laboratory/organization conducting the test and/or test conductor"
 * resultsInterpreter 0..*
 * resultsInterpreter only Reference(PractitionerLt or PractitionerRoleLt)
+* resultsInterpreter ^short = "Test confirmer/approver"
 * specimen 1..*
 * specimen only Reference($EuSpecimenUrl)
 * result 1..*

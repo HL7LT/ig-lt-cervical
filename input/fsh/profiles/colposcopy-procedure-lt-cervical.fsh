@@ -1,5 +1,5 @@
 Profile: ColposcopyProcedureLtCervical
-Parent: Procedure
+Parent: ProcedureLt
 Id: colposcopy-procedure-lt-cervical
 Title: "Procedure: Colposcopy"
 Description: "Colposcopy procedure performed as part of the Lithuanian cervical cancer screening and diagnostic pathway (ADP)."

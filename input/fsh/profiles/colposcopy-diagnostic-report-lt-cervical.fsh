@@ -1,5 +1,5 @@
 Profile: ColposcopyDiagnosticReportLtCervical
-Parent: DiagnosticReport
+Parent: DiagnosticReportLt
 Id: colposcopy-diagnostic-report-lt-cervical
 Title: "DiagnosticReport: Colposcopy"
 Description: "Diagnostic report summarizing findings and procedures performed during colposcopy in the Lithuanian cervical cancer screening pathway."
@@ -22,7 +22,7 @@ Description: "Diagnostic report summarizing findings and procedures performed du
 * result only Reference(ColposcopyFindingLtCervical)
 * supportingInfo 0..*
 * supportingInfo.type 1..1
-* supportingInfo.reference only Reference(Procedure)
+* supportingInfo.reference only Reference(ProcedureLt)
 * supportingInfo.reference ^type.targetProfile[0] = Canonical(ColposcopyProcedureLtCervical)
 * supportingInfo.reference ^type.targetProfile[+] = Canonical(ColposcopyBiopsyProcedureLtCervical)
 * specimen 0..*

@@ -41,8 +41,8 @@ Description: "Histopathological diagnostic conclusion for cervical tissue examin
 
 * component[pLVI].code = $sct#371513001 "Presence of direct invasion by primary malignant neoplasm to lymphatic vessel and/or small blood vessel (observable entity)"
 * component[pLVI].value[x] only CodeableConcept
-* component[pLVI].valueCodeableConcept from YesNoUnknownLtCervicalVS (required)
-* component[pLVI] ^short = "Lymphovascular invasion (pLVI) status"
+* component[pLVI].valueCodeableConcept from $plvi-classification-vs-url (required)
+* component[pLVI] ^short = "Lymphovascular invasion (pLVI) 6-level classification (pLVI-0 through pLVI-4, pLVI-9)"
 
 * component[surgicalMargins].code = $sct#396631001 "Surgical margin observable (observable entity)"
 * component[surgicalMargins].value[x] only CodeableConcept

@@ -13,8 +13,24 @@ Description: "Histopathological examination report for cervical tissue obtained 
 * subject 1..1 MS
 * subject only Reference(PatientLt)
 
+// Performer roles per ADP: test conductor (pathologist) and confirmer (senior pathologist)
+* performer 1..* MS
+* performer only Reference(PractitionerLt or PractitionerRoleLt or OrganizationLt)
+* resultsInterpreter 0..* MS
+* resultsInterpreter only Reference(PractitionerLt or PractitionerRoleLt)
+* resultsInterpreter ^short = "Test confirmer/approver (senior pathologist)"
+
+// Referring doctor is captured via basedOn → ServiceRequest.requester
+* basedOn 0..* MS
+* basedOn only Reference(ServiceRequestLt)
+
 * specimen MS
 * specimen only Reference(SpecimenLtLab)
+
+// Structured pathology document (macroscopic, microscopic, synthesis sections)
+* composition 0..1 MS
+* composition only Reference(PathologyCompositionLtLab)
+* composition ^short = "Synoptic pathology document with macroscopic/microscopic/synthesis sections"
 
 * result MS
 * result ^slicing.discriminator.type = #profile
@@ -23,11 +39,14 @@ Description: "Histopathological examination report for cervical tissue obtained 
 * result contains
     histopathologyConclusion 0..* and
     tumorMeasurement 0..* and
+    specimenMeasurement 0..* and
     specimenAdequacy 0..*
 * result[histopathologyConclusion] only Reference(HistopathologyConclusionLtCervical)
 * result[histopathologyConclusion] ^short = "Histopathology diagnostic conclusion (diagnosis, grade, margins, pLVI)"
 * result[tumorMeasurement] only Reference(TumorMeasurementLtLab)
 * result[tumorMeasurement] ^short = "Tumor measurement (dimensions in mm)"
+* result[specimenMeasurement] only Reference(SpecimenMeasurementLtLab)
+* result[specimenMeasurement] ^short = "Specimen/tissue fragment measurements (dimensions x,y,z mm per container)"
 * result[specimenAdequacy] only Reference(SpecimenAdequacyLtLab)
 * result[specimenAdequacy] ^short = "Specimen adequacy assessment"
 

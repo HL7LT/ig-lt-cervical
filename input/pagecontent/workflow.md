@@ -17,7 +17,7 @@ All reports are linked into a single [Cervical Cancer Screening Episode Composit
 
 #### 1. HPV Testing
 
-Women in the screening programme undergo high-risk HPV DNA testing as the primary screening method.
+Women in the screening programme undergo high-risk HPV DNA testing as the primary screening method. The HPV test procedure code is always SNOMED `35904009` (HPV DNA detection). The screening context (primary, routine, targeted, repeat, or control after treatment) is conveyed via `ServiceRequest.reason` referencing the screening programme, not via the DiagnosticReport code.
 
 **Profile**: [HpvDiagnosticReportLtCervical](StructureDefinition-hpv-diagnostic-report-lt-cervical.html)
 
@@ -34,7 +34,9 @@ The HPV diagnostic report contains:
 
 #### 2. Cervical Cytology (Pap Test)
 
-Cervical cytology is performed either as a co-test with HPV or as a follow-up to positive HPV results.
+Cervical cytology is performed either as a co-test with HPV or as a follow-up to positive HPV results. The specific test type is indicated in `DiagnosticReport.code` using [CervicalCytologyTestTypeVS](ValueSet-cervical-cytology-test-type.html), which includes routine PAP (440623000), liquid-based screening (417036008), general cervical cytology (416107004), diagnostic cytology after colposcopy (609040007), and immunocytochemistry p16/Ki-67 (395126005).
+
+Morphological sub-features within Bethesda categories (e.g., koilocytes in LSIL, reparative changes in NILM) are captured via the ESPBI Questionnaires rather than in the structured observation profiles.
 
 **Profile**: [CytologyDiagnosticReportLtCervical](StructureDefinition-cytology-diagnostic-report-lt-cervical.html)
 
@@ -59,7 +61,7 @@ Colposcopy is indicated when HPV is positive and/or cytology shows abnormalities
 
 The colposcopy report contains:
 - [Colposcopy Procedure](StructureDefinition-colposcopy-procedure-lt-cervical.html) — the examination procedure
-- [Colposcopy Finding](StructureDefinition-colposcopy-finding-lt-cervical.html) — adequacy, Swede score (0–10), risk classification (low/high)
+- [Colposcopy Finding](StructureDefinition-colposcopy-finding-lt-cervical.html) — adequacy (satisfactory/unsatisfactory), Swede score (0–10, coded using SNOMED 1389350002), risk classification (low 0–3 / high 4–10)
 - [Colposcopy Biopsy Procedure](StructureDefinition-colposcopy-biopsy-procedure-lt-cervical.html) — if biopsy is taken (punch, LEEP, cone, curettage)
 - [Colposcopy History](StructureDefinition-colposcopy-history-lt-cervical.html) — previous colposcopy status
 
@@ -77,11 +79,14 @@ Histopathological examination is performed on tissue obtained from biopsy or exc
 **Profile**: [HistopathologyDiagnosticReportLtCervical](StructureDefinition-histopathology-diagnostic-report-lt-cervical.html)
 
 The histopathology report contains:
-- [Histopathology Conclusion](StructureDefinition-histopathology-conclusion-lt-cervical.html) — WHO classification diagnosis, histological grade (G1–G3), pLVI, surgical margins
+- [Histopathology Conclusion](StructureDefinition-histopathology-conclusion-lt-cervical.html) — WHO classification diagnosis, histological grade (G1–G3), pLVI (6-level classification from Lab IG), surgical margins
+- [Pathology Composition](https://build.fhir.org/ig/HL7LT/ig-lt-lab/StructureDefinition-pathology-composition-lt-lab.html) — synoptic document with Pre-Analytic, Macroscopic, Microscopic, and Synthesis sections (reused from Lab IG)
+- [Specimen Measurement](https://build.fhir.org/ig/HL7LT/ig-lt-lab/StructureDefinition-specimen-measurement-lt-lab.html) — tissue fragment dimensions (x,y,z mm per container) and ectocervix measurements (reused from Lab IG)
 - [Tumor Measurement](https://build.fhir.org/ig/HL7LT/ig-lt-lab/StructureDefinition-tumor-measurement-lt-lab.html) — 3D tumor dimensions in mm (reused from Lab IG)
-- [Tumor Observable](https://build.fhir.org/ig/HL7LT/ig-lt-lab/StructureDefinition-tumor-observable-lt-lab.html) — focality, type, location (reused from Lab IG)
-- [Specimen](https://build.fhir.org/ig/HL7LT/ig-lt-lab/StructureDefinition-specimen-lt-lab.html) — cervical tissue specimen (reused from Lab IG)
-- [Cervical Condition (TNM Staging)](StructureDefinition-cervical-condition-lt-cervical.html) — pT, pR staging with ICD-O morphology
+- [Specimen](https://build.fhir.org/ig/HL7LT/ig-lt-lab/StructureDefinition-specimen-lt-lab.html) — cervical tissue specimen with fixation type via `processing.additive` (formalin = SNOMED 434162003) (reused from Lab IG)
+- [Cervical Condition (TNM Staging)](StructureDefinition-cervical-condition-lt-cervical.html) — pT (pTX–pT4), pN (pNX–pN2), pR (pRX–pR2) staging with ICD-O morphology
+
+**Practitioner roles**: The `performer` element captures the test conductor (pathologist); `resultsInterpreter` captures the confirmer/approver (senior pathologist). The referring doctor is linked via `basedOn` → `ServiceRequest.requester`.
 
 **Examples**:
 - [Histopathology Report (HSIL/CIN2)](DiagnosticReport-diagnosticreport-histopathology-example.html)
