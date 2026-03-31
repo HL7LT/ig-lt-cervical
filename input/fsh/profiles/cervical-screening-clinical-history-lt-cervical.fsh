@@ -63,7 +63,7 @@ Description: "A panel of pre-analytic clinical observations."
 
 // 9. IUD with Progestogens
 * component contains iudHormonal 0..1
-* component[iudHormonal].code = $sct#473099003 "History of use of hormone releasing intrauterine device contraception (situation)"
+* component[iudHormonal].code = $sct#449038007 "Uses hormone releasing intrauterine device contraception"
 * component[iudHormonal].value[x] only CodeableConcept
 * component[iudHormonal].valueCodeableConcept from YesNoUnknownLtCervicalVS (required)
 

@@ -170,7 +170,7 @@ Description: "ESPBI form for cervical cancer screening: HPV testing and cytologi
 * item[5].item[4].linkId = "clinicalHistory.lactation"
 * item[5].item[4].text = "Lactation"
 * item[5].item[4].type = #coding
-* item[5].item[4].code = $sct#225604004 "Breast feeding (finding)"
+* item[5].item[4].code = $sct#225604004 "Lactation established (finding)"
 * item[5].item[4].answerOption[0].valueCoding = $sct#373066001 "Yes (qualifier value)"
 * item[5].item[4].answerOption[1].valueCoding = $sct#373067005 "No (qualifier value)"
 
@@ -207,7 +207,7 @@ Description: "ESPBI form for cervical cancer screening: HPV testing and cytologi
 * item[5].item[7].linkId = "clinicalHistory.iud"
 * item[5].item[7].text = "Intrauterine device (IUD)"
 * item[5].item[7].type = #coding
-* item[5].item[7].code = $sct#312081001 "Intrauterine device contraception (finding)"
+* item[5].item[7].code = $sct#312081001 "Uses intrauterine device contraception (finding)"
 * item[5].item[7].answerOption[0].valueCoding = $sct#373066001 "Yes (qualifier value)"
 * item[5].item[7].answerOption[1].valueCoding = $sct#373067005 "No (qualifier value)"
 
