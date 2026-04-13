@@ -1,31 +1,31 @@
 # Gimdos kaklelio diagnostinė ataskaita
 
-Šiame puslapyje aprašomas Gimdos kaklelio diagnostinės ataskaitos profilis, naudojamas Lietuvos gimdos kaklelio vėžio įgyvendinimo vadove.
+Šiame puslapyje aprašomas gimdos kaklelio diagnostinės ataskaitos profilis, naudojamas Lietuvos gimdos kaklelio vėžio įgyvendinimo vadove.
 
 ## Apžvalga
 
-CervicalDiagnosticReportLtCervical profilis pateikia išsamią diagnostinę ataskaitą gimdos kaklelio vėžio atrankai ir diagnostikai. Jis apibendrina radinius iš įvairių tyrimų ir ekspertizių atrankos kelyje.
+CervicalDiagnosticReportLtCervical profilis apibrėžia išsamią gimdos kaklelio vėžio atrankos ir diagnostikos ataskaitą. Jis apibendrina radinius iš įvairių tyrimų ir vertinimų atrankos procese.
 
 ## Profilio duomenys
 
-- **Tėvinis elementas**: DiagnosticReport
+- **Tėvinis profilis**: DiagnosticReport
 - **ID**: cervical-diagnostic-report-lt-cervical
 - **URL**: https://hl7.lt/fhir/cervical/StructureDefinition/cervical-diagnostic-report-lt-cervical
 
 ## Pagrindiniai elementai
 
-- **Būklė**: Privaloma
-- **Kategorija**: Tyrimas
+- **Būsena**: Privaloma
+- **Kategorija**: Ištyrimas
 - **Kodas**: Gimdos kaklelio piktybinio naviko atranka
 - **Subjektas**: Pacientas
-- **Efektyvi data/laikas**: Privaloma
-- **Paskelbta**: Privaloma
+- **Efektyvioji data / laikas**: Privaloma
+- **Paskelbimo data**: Privaloma
 - **Rezultatai**: Nuorodos į įvairius stebėjimus ir radinius
-- **Palaikanti informacija**: Nuorodos į kitas ataskaitas, vaizdinimo tyrimus, procedūras
-- **Mėginys**: Nuorodos į mėginius
+- **Papildoma informacija**: Nuorodos į kitas ataskaitas, vaizdinimo tyrimus ir procedūras
+- **Mėginiai**: Nuorodos į mėginius
 - **Išvada**: Neprivaloma naratyvinė išvada
-- **Išvados kodas**: Neprivalomų koduotų išvadų kodai
+- **Išvados kodas**: Neprivaloma koduota išvada
 
 ## Naudojimas
 
-Ši ataskaita naudojama pateikti bendrą gimdos kaklelio vėžio atrankos proceso santrauką pacientui, susiejant su konkrečiais tyrimo rezultatais ir procedūromis.
+Ši ataskaita naudojama pateikti bendrą gimdos kaklelio vėžio atrankos proceso santrauką, susietą su konkrečiais tyrimų rezultatais ir procedūromis.
