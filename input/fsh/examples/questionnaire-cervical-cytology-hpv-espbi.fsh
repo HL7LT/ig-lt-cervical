@@ -267,7 +267,7 @@ Description: "ESPBI form for cervical cancer screening: HPV testing and cytologi
 * item[8].item[0].linkId = "hpvResults.overallResult"
 * item[8].item[0].text = "Overall HPV result"
 * item[8].item[0].type = #coding
-* item[8].item[0].answerOption[0].valueCoding = $sct#77851000146104 "High risk human papillomavirus deoxyribonucleic acid not detected (finding)"
+* item[8].item[0].answerOption[0].valueCoding = $sct#77851000146104 "High risk human papillomavirus not detected (finding)"
 * item[8].item[0].answerOption[1].valueCoding = $sct#125154007 "Specimen unsatisfactory for evaluation (finding)"
 * item[8].item[0].answerOption[2].valueCoding = $sct#720005005 "Human papillomavirus deoxyribonucleic acid detected, high risk on cervical specimen (finding)"
 
@@ -413,9 +413,9 @@ Description: "ESPBI form for cervical cancer screening: HPV testing and cytologi
 * item[9].item[4].type = #coding
 * item[9].item[4].answerOption[0].valueCoding = $sct#373887005 "Negative for intraepithelial lesion or malignancy (finding)"
 * item[9].item[4].answerOption[1].valueCoding = $sct#441087007 "Atypical squamous cells of undetermined significance on cervical Papanicolaou smear (finding)"
-* item[9].item[4].answerOption[2].valueCoding = $sct#62051000119105 "Low-grade squamous intraepithelial lesion on cervical Papanicolaou smear (finding)"
-* item[9].item[4].answerOption[3].valueCoding = $sct#441088002 "Atypical squamous cells on cervical Papanicolaou smear cannot exclude high-grade squamous intraepithelial lesion (finding)"
-* item[9].item[4].answerOption[4].valueCoding = $sct#62061000119107 "High-grade squamous intraepithelial lesion on cervical Papanicolaou smear (finding)"
+* item[9].item[4].answerOption[2].valueCoding = $sct#62051000119105 "Low grade squamous intraepithelial lesion on cervical Papanicolaou smear (finding)"
+* item[9].item[4].answerOption[3].valueCoding = $sct#441088002 "Atypical squamous cells on cervical Papanicolaou smear cannot exclude high grade squamous intraepithelial lesion (finding)"
+* item[9].item[4].answerOption[4].valueCoding = $sct#62061000119107 "High grade squamous intraepithelial lesion on cervical Papanicolaou smear (finding)"
 * item[9].item[4].answerOption[5].valueCoding = $sct#1162767002 "Squamous cell carcinoma (morphologic abnormality)"
 * item[9].item[4].answerOption[6].valueCoding = $sct#373883009 "Atypical glandular cells, favor neoplastic (morphologic abnormality)"
 * item[9].item[4].answerOption[7].valueCoding = $sct#51642000 "Adenocarcinoma in situ (morphologic abnormality)"

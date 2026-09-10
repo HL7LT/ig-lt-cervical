@@ -63,7 +63,7 @@ Description: "Completed ESPBI cervical histopathological examination response: c
 
 * item[=].item[+].linkId = "colposcopyData.colposcopyStatus"
 * item[=].item[=].text = "Colposcopy status"
-* item[=].item[=].answer[0].valueCoding = $sct#392003006 "Colposcopy performed"
+* item[=].item[=].answer[0].valueCoding = $sct#392003006 "Colposcopy (procedure)"
 
 * item[=].item[+].linkId = "colposcopyData.swedeScore"
 * item[=].item[=].text = "Swede score (0-10)"

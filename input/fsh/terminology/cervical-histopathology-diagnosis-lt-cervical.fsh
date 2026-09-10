@@ -42,7 +42,7 @@ Description: "Histopathological diagnostic conclusions for cervical tissue exami
 * $sct#128637002 "Adenoid basal carcinoma (morphologic abnormality)"
 * $sct#38549000 "Carcinoma, undifferentiated (morphologic abnormality)"
 * $sct#1286767006 "Neuroendocrine carcinoma (morphologic abnormality)"
-* $sct#14799000 "Neoplasms, metastatic (morphologic abnormality)"
+* $sct#14799000 "Neoplasm, metastatic (morphologic abnormality)"
 
 // Mixed
 * $sct#40293003 "Adenomyoma (morphologic abnormality)"

@@ -102,7 +102,7 @@ Description: "ESPBI form for cervical histopathological examination based on ADP
 * item[=].item[+].linkId = "colposcopyData.colposcopyStatus"
 * item[=].item[=].text = "Colposcopy status"
 * item[=].item[=].type = #coding
-* item[=].item[=].answerOption[+].valueCoding = $sct#392003006 "Colposcopy performed"
+* item[=].item[=].answerOption[+].valueCoding = $sct#392003006 "Colposcopy (procedure)"
 * item[=].item[=].answerOption[+].valueCoding = $sct#416237000 "Colposcopy postponed"
 
 * item[=].item[+].linkId = "colposcopyData.swedeScore"
@@ -308,7 +308,7 @@ Description: "ESPBI form for cervical histopathological examination based on ADP
 * item[=].item[=].answerOption[+].valueCoding = $sct#396256001 "Surgical exocervical margin involved by malignant neoplasm (finding)"
 * item[=].item[=].answerOption[+].valueCoding = $sct#396246000 "Surgical endocervical margin involved by malignant neoplasm (finding)"
 * item[=].item[=].answerOption[+].valueCoding = $sct#395544008 "Surgical deep margin involved by malignant neoplasm (finding)"
-* item[=].item[=].answerOption[+].valueCoding = $sct#395537004 "Involvement of surgical margins by the tumor cannot be assessed (finding)"
+* item[=].item[=].answerOption[+].valueCoding = $sct#395537004 "Surgical margin involvement by tumor cannot be assessed (finding)"
 
 // ── Group 13: TNM Staging ───────────────────────────────────────
 * item[+].linkId = "tnm"
