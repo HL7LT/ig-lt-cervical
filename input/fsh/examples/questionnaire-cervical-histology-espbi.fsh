@@ -83,8 +83,8 @@ Description: "ESPBI form for cervical histopathological examination based on ADP
 * item[=].item[=].enableWhen[0].operator = #=
 * item[=].item[=].enableWhen[0].answerCoding = $sct#373066001 "Yes (qualifier value)"
 * item[=].item[=].answerOption[+].valueCoding = $sct#50796003 "Cervical biopsy (procedure)"
-* item[=].item[=].answerOption[+].valueCoding = $sct#108941001 "History of cervical conization (situation)"
-* item[=].item[=].answerOption[+].valueCoding = $sct#125211000011906 "History of antineoplastic chemotherapy (situation)"
+* item[=].item[=].answerOption[+].valueCoding = $sct#108941000119102 "History of cervical conization (situation)"
+* item[=].item[=].answerOption[+].valueCoding = $sct#125211000119106 "History of antineoplastic chemotherapy (situation)"
 * item[=].item[=].answerOption[+].valueCoding = $sct#429479009 "History of radiation therapy (situation)"
 
 * item[=].item[+].linkId = "previousProcedures.procedureDate"
