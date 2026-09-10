@@ -16,7 +16,7 @@ Description: "Example of a cervical cancer screening episode composition linking
 
 // Required events from ImagingCompositionLt
 * event[imagingstudy].detail.concept = $DCM#US "Ultrasound"
-* event[procedure].detail.concept = $sct#71341001 "Screening for malignant neoplasm of cervix (procedure)"
+* event[procedure].detail.concept = $sct#171149006 "Cervical neoplasia screening (procedure)"
 
 // Required imagingstudy section from ImagingCompositionLt
 * section[imagingstudy].title = "Imaging Study"

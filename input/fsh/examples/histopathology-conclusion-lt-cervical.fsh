@@ -15,7 +15,7 @@ Description: "Example of a cervical histopathology conclusion showing HSIL/CIN2 
 * component[histologicalGrade].code = $sct#371469007 "Histologic grade of neoplasm (observable entity)"
 * component[histologicalGrade].valueCodeableConcept = $sct#1228850007 "American Joint Committee on Cancer grade G2 (qualifier value)"
 
-* component[pLVI].code = $sct#371513001 "Presence of direct invasion by primary malignant neoplasm to lymphatic vessel and/or small blood vessel (observable entity)"
+* component[pLVI].code = $sct#371512006 "Presence of direct invasion by primary malignant neoplasm to lymphatic vessel and/or small blood vessel (observable entity)"
 * component[pLVI].valueCodeableConcept = PlviClassificationLtLab#plvi-0 "pLVI-0: not detected"
 
 * component[surgicalMargins].code = $sct#396631001 "Surgical margin observable (observable entity)"

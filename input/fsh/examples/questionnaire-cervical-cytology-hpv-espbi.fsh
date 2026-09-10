@@ -156,7 +156,7 @@ Description: "ESPBI form for cervical cancer screening: HPV testing and cytologi
 * item[5].item[2].linkId = "clinicalHistory.hormoneTherapy"
 * item[5].item[2].text = "Hormone therapy"
 * item[5].item[2].type = #coding
-* item[5].item[2].code = $sct#1346510001 "Hormone therapy (procedure)"
+* item[5].item[2].code = $sct#134651000119108 "History of estrogen therapy (situation)"
 * item[5].item[2].answerOption[0].valueCoding = $sct#373066001 "Yes (qualifier value)"
 * item[5].item[2].answerOption[1].valueCoding = $sct#373067005 "No (qualifier value)"
 
@@ -214,7 +214,7 @@ Description: "ESPBI form for cervical cancer screening: HPV testing and cytologi
 * item[5].item[8].linkId = "clinicalHistory.conization"
 * item[5].item[8].text = "Conization"
 * item[5].item[8].type = #group
-* item[5].item[8].code = $sct#1089410001 "History of cervical conization (situation)"
+* item[5].item[8].code = $sct#108941000119102 "History of cervical conization (situation)"
 
 * item[5].item[8].item[0].linkId = "clinicalHistory.conization.status"
 * item[5].item[8].item[0].text = "Conization performed"

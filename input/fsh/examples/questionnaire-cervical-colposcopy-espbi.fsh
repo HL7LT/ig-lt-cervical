@@ -159,7 +159,7 @@ Description: "ESPBI form for capturing colposcopy examination data in the Lithua
 * item[=].item[=].answerOption[+].valueCoding = $sct#51675008 "Punch biopsy of cervix (procedure)"
 * item[=].item[=].answerOption[+].valueCoding = $sct#23140002 "Loop electrosurgical excision procedure of cervix (procedure)"
 * item[=].item[=].answerOption[+].valueCoding = $sct#54535009 "Cone biopsy of cervix (procedure)"
-* item[=].item[=].answerOption[+].valueCoding = $sct#5288900 "Endocervical curettage (procedure)"
+* item[=].item[=].answerOption[+].valueCoding = $sct#52889002 "Endocervical curettage (procedure)"
 
 // ── Group 8: Biopsy site ──
 * item[+].linkId = "biopsySite"
