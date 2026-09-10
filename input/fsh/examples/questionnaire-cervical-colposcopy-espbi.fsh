@@ -176,7 +176,7 @@ Description: "ESPBI form for capturing colposcopy examination data in the Lithua
 * item[=].item[=].answerOption[+].valueCoding = $sct#127902004 "Right superior quadrant of uterine cervix"
 * item[=].item[=].answerOption[+].valueCoding = $sct#127901006 "Right inferior quadrant of uterine cervix"
 * item[=].item[=].answerOption[+].valueCoding = $sct#127899002 "Left inferior quadrant of uterine cervix"
-* item[=].item[=].answerOption[+].valueCoding = $sct#56739004 "Cervical canal of uterus"
+* item[=].item[=].answerOption[+].valueCoding = $sct#56739004 "Structure of cervical canal of uterus (body structure)"
 
 * item[=].item[+].linkId = "biopsySite.notes"
 * item[=].item[=].text = "Notes"

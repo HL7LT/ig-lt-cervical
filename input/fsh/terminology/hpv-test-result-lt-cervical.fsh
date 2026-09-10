@@ -7,7 +7,7 @@ Description: "Overall result codes for HPV DNA testing."
 * ^experimental = false
 * ^publisher = "HL7 Lithuania"
 // --- Negative
-* $sct#77851000146104 "High risk human papillomavirus deoxyribonucleic acid not detected (finding)"
+* $sct#77851000146104 "High risk human papillomavirus not detected (finding)"
 // --- Positive
 * $sct#720005005 "Human papillomavirus deoxyribonucleic acid detected, high risk on cervical specimen (finding)"
 // --- Unsatisfactory / Rejected

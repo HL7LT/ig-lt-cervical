@@ -303,7 +303,7 @@ Description: "Completed ESPBI form for routine cervical screening: HPV 16 detect
 // --- Bethesda diagnosis: LSIL ---
 * item[9].item[4].linkId = "cytologyResults.bethesdaDiagnosis"
 * item[9].item[4].text = "Bethesda diagnosis"
-* item[9].item[4].answer.valueCoding = $sct#62051000119105 "Low-grade squamous intraepithelial lesion on cervical Papanicolaou smear (finding)"
+* item[9].item[4].answer.valueCoding = $sct#62051000119105 "Low grade squamous intraepithelial lesion on cervical Papanicolaou smear (finding)"
 
 // ═══════════════════════════════════════
 // Group 11: Immunocytochemistry (p16/Ki-67)

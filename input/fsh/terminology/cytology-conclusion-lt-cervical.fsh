@@ -19,10 +19,10 @@ Description: "Cytological diagnostic conclusions and specimen adequacy categorie
 * $sct#416032004 "Cervicovaginal cytology normal or benign (finding)"
 // --- ASC-US / ASC-H
 * $sct#441087007 "Atypical squamous cells of undetermined significance on cervical Papanicolaou smear (finding)"
-* $sct#441088002 "Atypical squamous cells on cervical Papanicolaou smear cannot exclude high-grade squamous intraepithelial lesion (finding)"
+* $sct#441088002 "Atypical squamous cells on cervical Papanicolaou smear cannot exclude high grade squamous intraepithelial lesion (finding)"
 // --- LSIL / HSIL
-* $sct#62051000119105 "Low-grade squamous intraepithelial lesion on cervical Papanicolaou smear (finding)"
-* $sct#62061000119107 "High-grade squamous intraepithelial lesion on cervical Papanicolaou smear (finding)"
+* $sct#62051000119105 "Low grade squamous intraepithelial lesion on cervical Papanicolaou smear (finding)"
+* $sct#62061000119107 "High grade squamous intraepithelial lesion on cervical Papanicolaou smear (finding)"
 // --- Glandular abnormalities
 * $sct#441219009 "Atypical glandular cells on cervical Papanicolaou smear (finding)"
 * $sct#373883009 "Atypical glandular cells, favor neoplastic (morphologic abnormality)"
