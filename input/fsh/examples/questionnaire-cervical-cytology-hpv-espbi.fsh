@@ -146,12 +146,12 @@ Description: "ESPBI form for cervical cancer screening: HPV testing and cytologi
 * item[5].item[0].linkId = "clinicalHistory.cycleDay"
 * item[5].item[0].text = "Day of menstrual cycle"
 * item[5].item[0].type = #integer
-* item[5].item[0].code = $sct#161713000 "Menstrual cycle day (observable entity)"
+* item[5].item[0].code = $sct#161713000 "Last menstrual period - First day (observable entity)"
 
 * item[5].item[1].linkId = "clinicalHistory.menopauseAge"
 * item[5].item[1].text = "Age at menopause (years)"
 * item[5].item[1].type = #integer
-* item[5].item[1].code = $sct#276477006 "Age at menopause (observable entity)"
+* item[5].item[1].code = $sct#276477006 "Menopause observation"
 
 * item[5].item[2].linkId = "clinicalHistory.hormoneTherapy"
 * item[5].item[2].text = "Hormone therapy"
@@ -163,7 +163,7 @@ Description: "ESPBI form for cervical cancer screening: HPV testing and cytologi
 * item[5].item[3].linkId = "clinicalHistory.pregnancy"
 * item[5].item[3].text = "Pregnancy"
 * item[5].item[3].type = #coding
-* item[5].item[3].code = $sct#77386006 "Pregnant (finding)"
+* item[5].item[3].code = $sct#77386006 "Pregnancy (finding)"
 * item[5].item[3].answerOption[0].valueCoding = $sct#373066001 "Yes (qualifier value)"
 * item[5].item[3].answerOption[1].valueCoding = $sct#373067005 "No (qualifier value)"
 
@@ -379,8 +379,8 @@ Description: "ESPBI form for cervical cancer screening: HPV testing and cytologi
 * item[9].item[2].answerOption[0].valueCoding = $sct#125152006 "Specimen satisfactory for evaluation (finding)"
 * item[9].item[2].answerOption[1].valueCoding = $sct#373880007 "Specimen rejected / not processed (finding)"
 * item[9].item[2].answerOption[2].valueCoding = $sct#125160007 "Unsatisfactory for evaluation due to broken slide (finding)"
-* item[9].item[2].answerOption[3].valueCoding = $sct#125159002 "Sample unlabeled (finding)"
-* item[9].item[2].answerOption[4].valueCoding = $sct#281268007 "Insufficient sample (finding)"
+* item[9].item[2].answerOption[3].valueCoding = $sct#125159002 "Specimen unlabeled (finding)"
+* item[9].item[2].answerOption[4].valueCoding = $sct#281268007 "Insufficient specimen (finding)"
 
 // --- Pathogen findings sub-group ---
 * item[9].item[3].linkId = "cytologyResults.pathogens"

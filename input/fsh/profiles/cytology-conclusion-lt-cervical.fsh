@@ -40,7 +40,7 @@ Description: "Final cytological diagnostic conclusion of cervical cytology exami
 * component[pathogenFindings].valueCodeableConcept from CervicalPathogenVS (extensible)
 * component[pathogenFindings] ^short = "Pathogens identified (candida, trichomonas, actinomyces, herpes)"
 
-* component[microfloraType].code = $sct#310210008 "Microbiota of genitourinary system normal (finding)"
+* component[microfloraType].code = $sct#31021000087105 "Microbiota of genitourinary system normal (finding)"
 * component[microfloraType].value[x] only CodeableConcept
 * component[microfloraType].valueCodeableConcept from CervicalMicrofloraVS (extensible)
 * component[microfloraType] ^short = "Microflora type (rod-shaped, coccobacillary, clue cells, etc.)"

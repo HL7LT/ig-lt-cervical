@@ -12,7 +12,7 @@ Description: "Types of cytological examinations ordered in the cervical cancer p
 // Cervical cytology test (general)
 * $sct#416107004 "Cervical cytology test (procedure)"
 // Liquid-based cervical cytology screening
-* $sct#417036008 "Liquid-based cervical cytology screening (procedure)"
+* $sct#417036008 "Liquid based cervical cytology screening (procedure)"
 // Diagnostic cytological examination (after colposcopy and/or treatment)
 * $sct#609040007 "Microscopic cytologic examination of smear of specimen from female genital tract prepared using Papanicolaou technique (procedure)"
 // Immunocytochemistry test (p16/Ki-67)

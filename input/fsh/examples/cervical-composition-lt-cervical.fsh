@@ -16,13 +16,13 @@ Description: "Example of a cervical cancer screening episode composition linking
 
 // Required events from ImagingCompositionLt
 * event[imagingstudy].detail.concept = $DCM#US "Ultrasound"
-* event[procedure].detail.concept = $sct#171149006 "Cervical neoplasia screening (procedure)"
+* event[procedure].detail.concept = $sct#171149006 "Screening for malignant neoplasm of cervix (procedure)"
 
 // Required imagingstudy section from ImagingCompositionLt
-* section[imagingstudy].title = "Imaging Study"
-* section[imagingstudy].text.status = #generated
-* section[imagingstudy].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Not applicable for this cervical screening episode.</p></div>"
-* section[imagingstudy].entry[imagingstudy].display = "No imaging study"
+// The imaging study section is omitted: cervical screening produces no DICOM
+// study, and imaging-composition-lt makes the section 0..* precisely so it can be
+// left out. It previously held one entry carrying a display and no reference,
+// which cannot satisfy entry[imagingstudy] 1..*.
 
 // Required order section
 * section[order].title = "Order"

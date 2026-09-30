@@ -145,12 +145,9 @@ Description: "Completed ESPBI cervical histopathological examination response: c
 * item[=].item[=].answer[0].valueCoding = $sct#400049009 "Squamous intraepithelial neoplasia grade 2 (morphologic abnormality)"
 
 // ── Group 9: Histological Grade ─────────────────────────────────
-* item[+].linkId = "grade"
-* item[=].text = "Histological grade"
-
-* item[=].item[+].linkId = "grade.grade"
-* item[=].item[=].text = "Grade"
-* item[=].item[=].answer[0].valueCoding = $sct#1228850007 "American Joint Committee on Cancer grade G2 (qualifier value)"
+// Not answered: the grade group is enabled only when conclusion.diagnosisCategory is
+// an invasive carcinoma, and this response reports CIN2. Grading an intraepithelial
+// lesion with an AJCC tumour grade is the same mistake Group 10 already avoids.
 
 // ── Group 10: Tumor Size ────────────────────────────────────────
 // Not applicable for CIN2 (non-invasive) — omitted

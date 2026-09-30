@@ -103,7 +103,7 @@ Description: "ESPBI form for cervical histopathological examination based on ADP
 * item[=].item[=].text = "Colposcopy status"
 * item[=].item[=].type = #coding
 * item[=].item[=].answerOption[+].valueCoding = $sct#392003006 "Colposcopy (procedure)"
-* item[=].item[=].answerOption[+].valueCoding = $sct#416237000 "Colposcopy postponed"
+* item[=].item[=].answerOption[+].valueCoding = $sct#416237000 "Procedure not done (situation)"
 
 * item[=].item[+].linkId = "colposcopyData.swedeScore"
 * item[=].item[=].text = "Swede score (0-10)"

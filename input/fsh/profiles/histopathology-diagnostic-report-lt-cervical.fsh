@@ -34,7 +34,7 @@ Description: "Histopathological examination report for cervical tissue obtained 
 
 * result MS
 * result ^slicing.discriminator.type = #profile
-* result ^slicing.discriminator.path = "$this"
+* result ^slicing.discriminator.path = "resolve()"
 * result ^slicing.rules = #open
 * result contains
     histopathologyConclusion 0..* and

@@ -8,7 +8,7 @@ Description: "Cervical cancer screening episode composition extending the base i
 
 // History section — cervical-specific clinical history
 * section[history].entry ^slicing.discriminator.type = #profile
-* section[history].entry ^slicing.discriminator.path = "$this"
+* section[history].entry ^slicing.discriminator.path = "resolve()"
 * section[history].entry ^slicing.ordered = false
 * section[history].entry ^slicing.rules = #open
 * section[history].entry contains
@@ -21,9 +21,13 @@ Description: "Cervical cancer screening episode composition extending the base i
 
 // Procedure section — colposcopy and biopsy procedures
 * section[procedure].entry ^slicing.discriminator.type = #profile
-* section[procedure].entry ^slicing.discriminator.path = "$this"
+* section[procedure].entry ^slicing.discriminator.path = "resolve()"
 * section[procedure].entry ^slicing.ordered = false
 * section[procedure].entry ^slicing.rules = #open
+// The inherited generic slice is prohibited here: ImProcedure asserts so little that
+// every instance matches it as well as the specific slice below, and a discriminator
+// must identify exactly one. Slicing is open, so a generic EU entry is still allowed.
+* section[procedure].entry[procedure] 0..0
 * section[procedure].entry contains
     colposcopyProcedure 0..* and
     biopsyProcedure 0..*
@@ -33,6 +37,10 @@ Description: "Cervical cancer screening episode composition extending the base i
 * section[procedure].entry[biopsyProcedure] ^short = "Biopsy procedure during colposcopy"
 
 // Findings section — HPV, cytology, colposcopy findings
+// The inherited generic slice is prohibited here: ImFinding asserts so little that
+// every instance matches it as well as the specific slice below, and a discriminator
+// must identify exactly one. Slicing is open, so a generic EU entry is still allowed.
+* section[findings].entry[finding] 0..0
 * section[findings].entry contains
     hpvResult 0..* and
     cytologyConclusion 0..* and
