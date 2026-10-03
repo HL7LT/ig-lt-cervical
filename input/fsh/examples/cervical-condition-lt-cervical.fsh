@@ -6,7 +6,7 @@ Description: "Example of a cervical cancer condition with pathological TNM stagi
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * category = $condition-category#encounter-diagnosis "Encounter Diagnosis"
-* code = $icd-10#C53.9 "Malignant neoplasm of cervix uteri, unspecified"
+* code = $icd-10#C53.9 "Cervix uteri, unspecified"
 * subject = Reference(patient-female-example)
 * recordedDate = "2025-04-15"
 

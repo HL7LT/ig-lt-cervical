@@ -15,4 +15,6 @@ Description: "Example of a cervical cancer screening report linking HPV, cytolog
 * result[+] = Reference(observation-hpv-result-example)
 * result[+] = Reference(observation-cytology-conclusion-example)
 * result[+] = Reference(observation-colposcopy-finding-example)
+// Referenced from the Composition but missing from result; dgr-1 requires both.
+* result[+] = Reference(observation-clinical-history-routine-example)
 * conclusion = "HPV 16 positive, LSIL on cytology, low-risk colposcopy (Swede score 3). Follow-up recommended in 12 months."

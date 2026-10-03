@@ -16,4 +16,4 @@ Description: "Example of a cervical histopathology report documenting HSIL/CIN2 
 * result[histopathologyConclusion] = Reference(observation-histopathology-conclusion-example)
 * result[tumorMeasurement] = Reference(observation-tumor-measurement-cervical-example)
 * conclusion = "High-grade squamous intraepithelial lesion (HSIL/CIN2). Clear surgical margins. No lymphovascular invasion."
-* conclusionCode.coding[icd10] = $icd-10#D06.9 "Carcinoma in situ of cervix uteri, unspecified"
+* conclusionCode.coding[icd10] = $icd-10#D06.9 "Cervix, unspecified"

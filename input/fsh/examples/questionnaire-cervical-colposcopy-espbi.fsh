@@ -24,7 +24,11 @@ Description: "ESPBI form for capturing colposcopy examination data in the Lithua
 * item[+].linkId = "patient"
 * item[=].text = "Patient identification"
 * item[=].type = #group
-* item[=].required = true
+// required is deliberately not set on this group. A group never carries an answer,
+// so the validator reads required on it as "no response answer found for required
+// item 'patient'" even when every child is answered. The requirement lives on the
+// three children below, which are each required already, so nothing is relaxed.
+// This is the only group in the portfolio that was marked required.
 
 * item[=].item[+].linkId = "patient.personalCode"
 * item[=].item[=].text = "Personal code"
